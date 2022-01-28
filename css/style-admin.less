@@ -1,0 +1,45 @@
+@import "asset";
+@use-rem: true;
+@rem: 18;
+
+html { font-size: 18px; }
+a { .ib; .pointer; }
+.shadow { box-shadow: 0 0 10px 0 rgba(0,0,0,0.3); }
+
+.container {
+  .wrap { .fs(0); .tc; .clear; .w(1690);
+    aside { .w(306); color:#fff; .bgc(#000); .tl; .ib; .vat; .fl;
+      .user { .p(35); .-box; .-b(#888);
+        .thumb { .wh(45,45); .br(50%); .bgc(#fff); .vam; .mr(15); }
+        .user-info { .ib; .vam;
+          .email { .bold; }
+          span { opacity: 0.59; }
+        }
+      }
+      .menu-list {
+        ul { .mt(35);
+          li { .lh(38); .pl(35); .-box;
+            p { .fs(15); opacity: 0.59; }
+          }
+        }
+      }
+    }
+
+    section { .ib; .vat; .w(1380); .tl; .p(32); .-box;
+      article { .bgc(#fff); .shadow; .m(8); .rel;
+        h4 { .fs(18); .-b(#9e9e9e); .p(20,30); .-box; }
+        .more-btn { .fs(18); .abs; .rt(30,20); }
+        .cont-box { .p(35,30); .-box; }
+        &.cell { .w(556); .ib; .vat; }
+        &.summary { .block; .wf;
+          .cont-box {
+            .tit, span { .ib; .vam; }
+            .tit { .mr(25); }
+            span { .mr(70); }
+          }
+        }
+        #myChart { .h(256); }
+      }
+    }
+  }
+}

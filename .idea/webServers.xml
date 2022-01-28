@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d55155fd-1b39-4012-81c6-c500262ab616" name="oops" url="http://oops.devcraft.kr">
+        <fileTransfer rootFolder="/var/www/oops" accessType="SFTP" host="devcraft.kr" port="22" sshConfigId="4d86c2ba-2653-46e2-8de4-7f96ed211d3e" sshConfig="root@devcraft.kr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style-admin.css">
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+  <script src="js/include.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <aside data-include="../include/aside.html"></aside>
+      <section>
+        <article class="summary">
+          <h4>사용자 요약</h4>
+          <div class="cont-box">
+            <p class="tit">누적 회원 가입</p>
+            <span>169명</span>
+            <p class="tit">누적 상담신청</p>
+            <span>16</span>
+            <p class="tit">진행중인 프로젝트</p>
+            <span>26</span>
+            <p class="tit">누적 유지보수 진행건</p>
+            <span>26</span>
+          </div>
+        </article>
+        <article class="cell">
+          <h4>방문자 현황</h4>
+          <div class="cont-box">
+            <canvas id="myChart"></canvas>
+          </div>
+        </article>
+        <article class="cell">
+          <h4>일자별 요약</h4>
+          <div class="cont-box"></div>
+        </article>
+        <article class="cell">
+          <h4>미응답 상담신청</h4>
+          <a class="more-btn">더보기</a>
+          <div class="cont-box"></div>
+        </article>
+        <article class="cell">
+          <h4>미응답 유지보수 신청</h4>
+          <a class="more-btn">더보기</a>
+          <div class="cont-box"></div>
+        </article>
+        <article class="cell">
+          <h4>현재 진행 중인 프로젝트 수</h4>
+          <a class="more-btn">더보기</a>
+          <div class="cont-box"></div>
+        </article>
+      </section>
+    </div>
+  </div>
+<script>
+  (function() {
+    const options = {
+      responsive: false,
+      maintainAspectRatio: false,
+      scales: {
+        // xAxes: [{
+        //   type: 'time',
+        //   time: {
+        //     unit: 'day',
+        //     displayFormats: {
+        //       day: 'MM-DD'
+        //     }
+        //   }
+        // }],
+        yAxes: [
+          {
+            id: 'A',
+            labels: {
+              show: true
+            },
+            type: 'linear',
+            position: 'left',
+            ticks: {
+              min: 0,
+              stepSize: 100,
+            },
+          },
+        ]
+      },
+      legend: {
+        display: false
+      },
+    }
+    const data = {
+      datasets: [
+        {
+          borderColor: "#4f81bd",
+          data: [100,200,300,400],
+          fill: true,
+          pointRadius: 4,
+          pointBorderWidth: 2,
+          lineTension: 0
+        },
+        {
+          borderColor: "#115abc",
+          data: [10,20,30,10],
+          fill: true,
+          pointRadius: 4,
+          pointBorderWidth: 2,
+          backgroundColor: '#fb1212',
+          lineTension: 0
+        },
+      ]
+    };
+
+    const config = {
+      type: 'line',
+      data: data,
+      options: options,
+    };
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config,
+    );
+  }());
+</script>
+</body>
+</html>
