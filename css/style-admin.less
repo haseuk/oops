@@ -2,43 +2,72 @@
 @use-rem: true;
 @rem: 18;
 
-html { font-size: 18px; }
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
+html { font-size: 18px; font-family: Pretendard, sans-serif; }
 a { .ib; .pointer; }
-.shadow { box-shadow: 0 0 10px 0 rgba(0,0,0,0.3); }
+.shadow { box-shadow: 0 0 8px 0 rgba(0,0,0,0.25); }
+table { .t-fix; .coll; }
 
 .container {
-  .wrap { .fs(0); .tc; .clear; .w(1690);
-    aside { .w(306); color:#fff; .bgc(#000); .tl; .ib; .vat; .fl;
-      .user { .p(35); .-box; .-b(#888);
-        .thumb { .wh(45,45); .br(50%); .bgc(#fff); .vam; .mr(15); }
-        .user-info { .ib; .vam;
-          .email { .bold; }
-          span { opacity: 0.59; }
+  .wrap { .fs(0); .tc; .clear; .w(1920);
+    aside { .w(352); color:#fff; .bgc(#000); .tl; .ib; .vat; .fl;
+      .user { .p(40); .-box; .-b(#606060);
+        .thumb { .wh(50,50); .vam; .mr(20); }
+        .user-info { .fs(20); .lh(24); .ib; .vam; .semi-bold;
+          .email { .mb(5); }
+          span { .fs(14); color:#A9A9A9; }
         }
       }
-      .menu-list {
-        ul { .mt(35);
-          li { .lh(38); .pl(35); .-box;
-            p { .fs(15); opacity: 0.59; }
+      .menu-list { .p(30,40); .-box; .semi-bold;
+        ul { .mb(50);
+          li { .fs(18); .lh(22); .mb(20);
+            &:first-child { .mb(17); }
+            p { .fs(14); .lh(17); color:#616161; }
           }
         }
       }
     }
 
-    section { .ib; .vat; .w(1380); .tl; .p(32); .-box;
-      article { .bgc(#fff); .shadow; .m(8); .rel;
-        h4 { .fs(18); .-b(#9e9e9e); .p(20,30); .-box; }
-        .more-btn { .fs(18); .abs; .rt(30,20); }
-        .cont-box { .p(35,30); .-box; }
-        &.cell { .w(556); .ib; .vat; }
-        &.summary { .block; .wf;
-          .cont-box {
-            .tit, span { .ib; .vam; }
-            .tit { .mr(25); }
-            span { .mr(70); }
+    section { .w(1568); .tl; .p(30,46,30,30); .-box; .fl;
+      article { .bgc(#fff); .shadow; .m(10); .rel;
+        h4 { .fs(18); .lh(22); color:#191919; .semi-bold; .-b(#EEEEEE); .p(17,0,20,26); .-box; }
+        .more-btn { .fs(18); .lh(22); color:#C4C4C4; .abs; .rt(20,20); }
+        &.cell { .wh(726,446); .ib; .vat;
+          table { .wf;
+            tr { .-b(#eee);
+              th, td { .fs(12); .p(8,0,7); .tc; }
+              th { color:#909090; .bgc(#D7D7D733);
+                &:nth-child(1) { .tl; .pl(30); .-box; }
+              }
+              td:nth-child(1) { .tl; .pl(30); .-box; }
+            }
+          }
+          ul {
+            li { .fs(18); .lh(22); .p(20,26); .-box; .-b(#eee); color:#191919;
+              s { .extra-bold; }
+              .co-name { .medium; }
+              span { .fs(14); .lh(17); color:#bbb; .mt(2); }
+            }
           }
         }
-        #myChart { .h(256); }
+        &.summary { .block; .w(1472);
+          .sum-txt { .semi-bold; .p(32,0,33,26); .-box;
+            .tit, span { .ib; .vam; }
+            .tit { .fs(18); .lh(22); .mr(20); }
+            span { .fs(36); .lh(43); .mr(60); .extra-bold; }
+          }
+        }
+        &.cell1 {
+          .legend { .abs; .rt(20,20);
+            p { .fs(15); .regular; .rel; .ib; .ml(50);
+              &:after { .cnt; .wh(15,15); .br(50%); .abs; .lt(-20,50%); .mt(-8); }
+              &:nth-child(1):after { background-color: rgb(239,176,177); }
+              &:nth-child(2):after { background-color: rgb(229,104,103); }
+            }
+          }
+        }
       }
     }
   }
