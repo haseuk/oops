@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-admin.css">
+  <script src="/js/include.js" defer></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <aside data-include="../include/aside.html"></aside>
+      <section class="admin2 admin10">
+        <article class="search-art">
+          <div class="search-exel">
+            <div class="input">
+              <a><img src="../images/admin/ico-search.svg" alt=""></a>
+              <input type="text" placeholder="키워드를 입력하세요.">
+            </div>
+            <a class="back-btn"><img src="../images/admin/ico-back.svg" alt=""> 뒤로가기</a>
+          </div>
+        </article>
+        <article class="all-table">
+          <h4>전체 포트폴리오 수 <s>1건</s></h4>
+          <div class="btns">
+            <a class="list-align"><img src="../images/admin/ico-ham.svg" alt=""> 정렬</a>
+            <a class="filter-btn"><img src="../images/admin/ico-filter.svg" alt=""> 필터추가</a>
+            <a class="addition-btn">추가하기</a>
+            <div class="filter-wrap">
+              <div class="filter-box">
+                <p>필터를 추가해주세요.</p>
+              </div>
+              <div class="add">
+                <a><img src="../images/admin/ico-add.svg" alt=""> 필터추가</a>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <table cellspacing="0" cellpadding="0" border="0">
+              <colgroup>
+                <col width="45">
+                <col width="220">
+                <col width="180">
+                <col width="180">
+                <col width="180">
+                <col width="180">
+                <col width="180">
+                <col width="232">
+              </colgroup>
+              <tr>
+                <th class="t-m">
+                  <label>
+                    <input type="checkbox" onclick="selectAll(this);">
+                    <i></i>
+                  </label>
+                </th>
+                <th>제목</th>
+                <th>서비스</th>
+                <th>지역</th>
+                <th>날짜</th>
+                <th>썸네일</th>
+                <th>삭제</th>
+                <th>수정하기</th>
+              </tr>
+            </table>
+            <ul id="sortable">
+              <li class="ui-state-default">
+                <table>
+                  <colgroup>
+                    <col width="45">
+                    <col width="220">
+                    <col width="180">
+                    <col width="180">
+                    <col width="180">
+                    <col width="180">
+                    <col width="180">
+                    <col width="232">
+                  </colgroup>
+                  <tr>
+                    <td>
+                      <a class="move-btn"><img src="../images/admin/ico-move-btn.svg" alt=""></a>
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                    </td>
+                    <td><p>1서울대학교 예술관</p></td>
+                    <td>인테리어</td>
+                    <td>관악구</td>
+                    <td>2021.11.21</td>
+                    <td><img src="../images/admin/Rectangle259.png" alt=""></td>
+                    <td>
+                      <a class="del t-btn">삭제</a>
+                    </td>
+                    <td>
+                      <a class="view t-btn">수정하기</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                </table>
+              </li>
+              <li class="ui-state-default">
+                <table>
+                  <colgroup>
+                    <col width="45">
+                    <col width="220">
+                    <col width="180">
+                    <col width="180">
+                    <col width="180">
+                    <col width="180">
+                    <col width="180">
+                    <col width="232">
+                  </colgroup>
+                  <tr>
+                    <td>
+                      <a class="move-btn"><img src="../images/admin/ico-move-btn.svg" alt=""></a>
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                    </td>
+                    <td><p>2서울대학교 예술관</p></td>
+                    <td>인테리어</td>
+                    <td>관악구</td>
+                    <td>2021.11.21</td>
+                    <td><img src="../images/admin/Rectangle259.png" alt=""></td>
+                    <td>
+                      <a class="del t-btn">삭제</a>
+                    </td>
+                    <td>
+                      <a class="view t-btn">수정하기</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                </table>
+              </li>
+              <li class="ui-state-default">
+                <table>
+                  <colgroup>
+                    <col width="45">
+                    <col width="220">
+                    <col width="180">
+                    <col width="180">
+                    <col width="180">
+                    <col width="180">
+                    <col width="180">
+                    <col width="232">
+                  </colgroup>
+                  <tr>
+                    <td>
+                      <a class="move-btn"><img src="../images/admin/ico-move-btn.svg" alt=""></a>
+                      <label>
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                    </td>
+                    <td><p>3서울대학교 예술관</p></td>
+                    <td>인테리어</td>
+                    <td>관악구</td>
+                    <td>2021.11.21</td>
+                    <td><img src="../images/admin/Rectangle259.png" alt=""></td>
+                    <td>
+                      <a class="del t-btn">삭제</a>
+                    </td>
+                    <td>
+                      <a class="view t-btn">수정하기</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="detail-view">
+          <div class="detail-info">
+            <div class="top-cell">
+              <p class="co-name">서울대학교 기숙사 인테리어 디자인</p>
+              <div class="btns">
+                <a class="del-btn t-btn">삭제하기</a>
+              </div>
+            </div>
+            <div class="table-wrap table-result">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <colgroup>
+                  <col width="160">
+                  <col width="538">
+                  <col width="160">
+                  <col width="538">
+                </colgroup>
+                <tr>
+                  <td>제목</td>
+                  <td><input type="text"></td>
+                  <td>서비스</td>
+                  <td>
+                    <div class="select">
+                      <select>
+                        <option value="">인테리어</option>
+                        <option value="">인테리어</option>
+                        <option value="">인테리어</option>
+                        <option value="">인테리어</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>지역</td>
+                  <td>
+                    <div class="select">
+                      <select>
+                        <option value="">인테리어</option>
+                        <option value="">인테리어</option>
+                        <option value="">인테리어</option>
+                        <option value="">인테리어</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>인원</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td>날짜</td>
+                  <td>
+                    <div class="date-input">
+                      <label>
+                        <input type="date">
+                      </label>
+                    </div>
+                  </td>
+                  <td>공사면적</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td>고객</td>
+                  <td><input type="text"></td>
+                  <td>공사기간</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td>썸네일</td>
+                  <td colspan="3">
+                    <ul class="img img0"></ul>
+                    <div class="img-add">
+                      <form>
+                        <input type="file" class="file-input" id="file-input">
+                      </form>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>사진 업로드</td>
+                  <td colspan="3">
+                    <ul class="img img1" id="sortable1"></ul>
+                    <div class="img-add">
+                      <form>
+                        <input type="file" class="file-input" id="file-input1">
+                      </form>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+  <div class="popup">
+    <div class="dim"></div>
+    <div class="inner">
+      <p class="tit">삭제하시겠습니까?</p>
+      <div class="btns">
+        <a class="del t-btn">삭제하기</a>
+        <a class="cancel t-btn">취소하기</a>
+      </div>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/aside.js"></script>
+  <script src="/js/admin.js"></script>
+  <script>
+    $(function() {
+      $("#sortable").sortable();
+      $("#sortable").disableSelection();
+    });
+    $(function() {
+      $("#sortable1").sortable();
+      $("#sortable1").disableSelection();
+    });
+
+    let fileInput = document.querySelector('#file-input');
+    $(function() {
+      $("#file-input").on('change', function(){
+        readURL(this);
+      });
+    });
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          $('.img').append('<li class="ui-state-default"><a onclick="imgDel(this);"><img src="'+e.target.result+'"></a></li>');
+        }
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    let fileInput1 = document.querySelector('#file-input1');
+    let imgWrap;
+    let photoFrame;
+    fileInput1.addEventListener('change', function(i) {
+      let file = i.target.files[0];
+      let reader = new FileReader();
+      reader.readAsDataURL(file);
+
+      reader.onload = function(){
+        $('.img1').append('<li class="ui-state-default"><a onclick="imgDel(this);"><img src="'+reader.result+'"></a></li>');
+      }
+    });
+    function imgDel(v) {
+      v.parentNode.remove();
+    }
+  </script>
+</body>
+</html>

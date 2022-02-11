@@ -7,47 +7,55 @@
   <title>OOPS</title>
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/style-admin.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
   <script src="../js/include.js" defer></script>
 </head>
 <body>
   <div class="container">
     <div class="wrap">
       <aside data-include="../include/aside.html"></aside>
-      <section>
+      <section class="admin1">
         <article class="summary">
           <h4>사용자 요약</h4>
           <div class="sum-txt">
-            <p class="tit">누적 회원 가입</p>
-            <span>169명</span>
-            <p class="tit">누적 상담신청</p>
-            <span>16</span>
-            <p class="tit">진행중인 프로젝트</p>
-            <span>26</span>
-            <p class="tit">누적 유지보수 진행건</p>
-            <span>26</span>
+            <ul>
+              <li>
+                <p class="tit">누적 회원 가입</p>
+                <span>169명</span>
+              </li>
+              <li>
+                <p class="tit">누적 상담신청</p>
+                <span>16</span>
+              </li>
+              <li>
+                <p class="tit">진행 중인 프로젝트</p>
+                <span>26</span>
+              </li>
+              <li>
+                <p class="tit">누적 유지보수 진행건</p>
+                <span>26</span>
+              </li>
+            </ul>
           </div>
         </article>
         <article class="cell cell1">
-          <h4>방문자 현황</h4>
-          <div class="legend">
-            <p>페이지뷰</p>
-            <p>방문자</p>
-          </div>
+          <h4>사용자 요약</h4>
           <div class="cont-box">
-            <img src="../images/admin/graph1.png" alt="" style="width: 698px;height: 358px;margin: 13px 14px;">
+            <canvas id="myChart"></canvas>
           </div>
         </article>
-        <article class="cell">
+        <article class="cell cell2">
           <h4>일자별 요약</h4>
           <div class="cont-box">
             <table cellpadding="0" cellspacing="0" border="0">
               <colgroup>
-                <col width="190">
-                <col width="100">
-                <col width="100">
-                <col width="100">
-                <col width="100">
-                <col width="136">
+                <col width="200">
+                <col width="80">
+                <col width="80">
+                <col width="80">
+                <col width="80">
+                <col width="134">
               </colgroup>
               <tr>
                 <th>일자</th>
@@ -109,11 +117,10 @@
           </div>
         </article>
         <article class="cell">
-          <h4>미응답 상담신청</h4>
-          <a class="more-btn">더보기</a>
+          <h4>미응답 상담신청 <s>5건</s></h4>
+          <a href="admin3.html" class="more-btn">더보기</a>
           <div class="cont-box">
             <ul>
-              <li class="total-count">총 <s>5</s> 건</li>
               <li>
                 <p class="co-name">주식회사 베오 리얼티</p>
                 <span>2022-02-14</span>
@@ -138,17 +145,97 @@
           </div>
         </article>
         <article class="cell">
-          <h4>미응답 유지보수 신청</h4>
-          <a class="more-btn">더보기</a>
-          <div class="cont-box"></div>
+          <h4>미응답 유지보수 신청 <s>5건</s></h4>
+          <a href="admin4.html" class="more-btn">더보기</a>
+          <div class="cont-box">
+            <ul>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+            </ul>
+          </div>
         </article>
         <article class="cell">
-          <h4>현재 진행 중인 프로젝트 수</h4>
-          <a class="more-btn">더보기</a>
-          <div class="cont-box"></div>
+          <h4>현재 진행 중인 프로젝트 수 <s>5건</s></h4>
+          <span>5건</span>
+          <a href="admin3.html" class="more-btn">더보기</a>
+          <div class="cont-box">
+            <ul>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+              <li>
+                <p class="co-name">주식회사 베오 리얼티</p>
+                <span>2022-02-14</span>
+              </li>
+            </ul>
+          </div>
         </article>
       </section>
     </div>
   </div>
+  <script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const startDate = new Date(2022, 0, 1); // 시작 날짜 지정 년,월,일
+    const labels = [];
+    let data = [0, 12, 19, 13, 15, 12, 13, 20]; //실제 날짜별 사용자 데이터
+    for (let i = 0; i < data.length; i++) {
+      const date = moment(startDate).add(i, 'days').format('MM/DD');
+      labels.push(date.toString());
+    }
+    var gradient = ctx.createLinearGradient(0,0,0,300);
+    gradient.addColorStop(0, 'rgba(255,255,255,1)');
+    gradient.addColorStop(1, 'rgba(0,122,255,0)');
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          data: data,
+          borderWidth: 2,
+          fill: true,
+          backgroundColor: gradient,
+          borderColor: '#007AFF',
+          pointRadius: 0,
+        }]
+      },
+      options: {
+        legend: {
+          display: false
+        },
+        aspectRatio: 2.0
+      }
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-admin.css">
+  <script src="/js/include.js" defer></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <aside data-include="../include/aside.html"></aside>
+      <section class="admin2 admin7">
+        <article class="search-art">
+          <div class="search-exel">
+            <a class="go-back"><img src="../../images/admin/ico-back.svg" alt=""> 뒤로가기</a>
+            <a class="exel-down">엑셀로 내려받기 <img src="../../images/admin/ico-exel.svg" alt=""></a>
+          </div>
+        </article>
+        <div class="lists list-wrap">
+          <ul>
+            <li><p>기본 정보</p><a class="view-switch"></a></li>
+            <li><p>사무실 매물 찾기</p><a class="view-switch"></a></li>
+            <li><p>인테리어</p><a class="view-switch"></a></li>
+            <li><p>가구 구매 및 제작</p><a class="view-switch"></a></li>
+            <li><p>이사</p><a class="view-switch"></a></li>
+            <li><p>LAN 통신 구축</p><a class="view-switch"></a></li>
+            <li><p>보안</p><a class="view-switch"></a></li>
+            <li><p>렌탈 (프린터, 정수기)</p><a class="view-switch"></a></li>
+            <li><p>복지 (간식, 물품)</p><a class="view-switch"></a></li>
+            <li><p>유지보수 관리</p><a class="view-switch"></a></li>
+          </ul>
+        </div>
+        <div class="lists list-detail">
+          <ul>
+            <li><p>기본 정보</p><a class="pre-view">미리보기</a></li>
+            <li class="tit"><p>제목</p><input type="text"></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/aside.js"></script>
+  <script src="/js/admin.js"></script>
+  <script>
+    let viewSwitch = document.querySelectorAll('.view-switch');
+    let searchArt = document.querySelector('.search-art');
+    Array.prototype.forEach.call(viewSwitch, function(e) {
+      e.addEventListener('click', function() {
+        searchArt.style.display = 'inline-block';
+      })
+    });
+    let goBack = document.querySelector('.go-back');
+  </script>
+</body>
+</html>
