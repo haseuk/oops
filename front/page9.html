@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-front-m.css">
+  <link rel="stylesheet" href="/css/style-front-pc.css">
+  <script src="../js/include.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap page8">
+      <!--#####header tag에 login 클래스면 로그인 되어있는 상태-->
+      <!--#####header tag에 loout 클래스면 로그아웃 되어있는 상태-->
+      <header data-include="../include/front/header.html" class="y-header"></header>
+      <section>
+        <article class="top1">
+          <h2>FAQ</h2>
+          <p>서비스 이용에 관한 궁금증을<br class="mo"> 해결해드리겠습니다!</p>
+        </article>
+        <article class="faq">
+          <ul>
+            <li>
+              <a><s>Q</s> OOPS 서비스 신청은 어떻게 하나요?</a>
+              <div class="cont">
+                <s>A</s>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed dui ac nibh aliquet maximus et quis arcu. Suspendisse potenti. Suspendisse potenti. Integer vel aliquet non pretium felis. Proin nec eros id justo dapibus ullamcorper nec quis mi. Morbi aliquam lorem est, vel accumsan enim vestibulum eu. Nulla molestie ante ut leo condimentum scelerisque. Maecenas at diam a urna tincidunt vulputate. Praesent felis magna, aliquet sit amet rutrum laoreet </p>
+              </div>
+            </li>
+            <li>
+              <a><s>Q</s> OOPS 서비스 신청은 어떻게 하나요?</a>
+              <div class="cont">
+                <s>A</s>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed dui ac nibh aliquet maximus et quis arcu. Suspendisse potenti. Suspendisse potenti. Integer vel aliquet non pretium felis. Proin nec eros id justo dapibus ullamcorper nec quis mi. Morbi aliquam lorem est, vel accumsan enim vestibulum eu. Nulla molestie ante ut leo condimentum scelerisque. Maecenas at diam a urna tincidunt vulputate. Praesent felis magna, aliquet sit amet rutrum laoreet </p>
+              </div>
+            </li>
+            <li>
+              <a><s>Q</s> OOPS 서비스 신청은 어떻게 하나요?</a>
+              <div class="cont">
+                <s>A</s>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed dui ac nibh aliquet maximus et quis arcu. Suspendisse potenti. Suspendisse potenti. Integer vel aliquet non pretium felis. Proin nec eros id justo dapibus ullamcorper nec quis mi. Morbi aliquam lorem est, vel accumsan enim vestibulum eu. Nulla molestie ante ut leo condimentum scelerisque. Maecenas at diam a urna tincidunt vulputate. Praesent felis magna, aliquet sit amet rutrum laoreet </p>
+              </div>
+            </li>
+            <li>
+              <a><s>Q</s> OOPS 서비스 신청은 어떻게 하나요?</a>
+              <div class="cont">
+                <s>A</s>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed dui ac nibh aliquet maximus et quis arcu. Suspendisse potenti. Suspendisse potenti. Integer vel aliquet non pretium felis. Proin nec eros id justo dapibus ullamcorper nec quis mi. Morbi aliquam lorem est, vel accumsan enim vestibulum eu. Nulla molestie ante ut leo condimentum scelerisque. Maecenas at diam a urna tincidunt vulputate. Praesent felis magna, aliquet sit amet rutrum laoreet </p>
+              </div>
+            </li>
+          </ul>
+          <a href="/front/page8.html" class="qna l-btn">문의하기</a>
+          <a href="/front/page1.html" class="apply">간편 상담 바로가기</a>
+        </article>
+      </section>
+      <footer data-include="../include/front/footer.html" class=""></footer>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/header.js"></script>
+  <script>
+    let faqList = document.querySelectorAll('.faq li a');
+    Array.prototype.forEach.call(faqList, function(e) {
+      e.addEventListener('click', function() {
+        if(e.parentNode.classList.contains('on')) {
+          e.parentNode.classList.remove('on');
+        } else {
+          e.parentNode.classList.add('on');
+        }
+
+      })
+    })
+  </script>
+</body>
+</html>

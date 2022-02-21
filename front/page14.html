@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-front-m.css">
+  <link rel="stylesheet" href="/css/style-front-pc.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="../js/include.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap prj page3 page14">
+      <!--#####header tag에 login 클래스면 로그인 되어있는 상태-->
+      <!--#####header tag에 loout 클래스면 로그아웃 되어있는 상태-->
+      <header data-include="../include/front/header.html" class="y-header login"></header>
+      <section>
+        <article class="top1">
+          <h2>회원정보 수정</h2>
+          <p>나의 회원정보를 수정하실 수 있습니다.</p>
+        </article>
+        <article class="arti1">
+          <div class="tab-wrap tab-active1">
+            <a class="tab tab1">회원정보 수정</a>
+            <a class="tab tab2">비밀번호 변경</a>
+          </div>
+          <div class="p-cont p-cont1">
+            <div class="cont-wrap">
+              <div class="cont">
+                <div>
+                  <p>회사명</p>
+                  <input type="text" placeholder="회사명을 알려주세요">
+                </div>
+                <div>
+                  <p>메일 (회사)</p>
+                  <input type="text" placeholder="Honggildong@oops.co.kr">
+                </div>
+                <div>
+                  <p>담당자 성함/직함</p>
+                  <input type="text" placeholder="담당자님 성함과 직함을 알려주세요">
+                </div>
+                <div>
+                  <p>연락처</p>
+                  <input type="number" placeholder="연락처를 알려주세요 ( - 제외)">
+                </div>
+                <div>
+                  <p>파일첨부</p>
+                  <div class="file-box">
+                    <input class="upload-name" placeholder="첨부파일">
+                    <a class="del-btn"></a>
+                    <label for="file">+ 파일 첨부</label>
+                    <input type="file" id="file" class="input-file">
+                  </div>
+                </div>
+              </div>
+              <div class="cont cont1">
+                <div>
+                  <p>로고등록</p>
+                  <div class="img-add">
+                    <form id="imgForm">
+                      <input type="file" id="file1">
+                    </form>
+                  </div>
+                  <div class="img">
+                    <img src="" alt="" id="view-img1">
+                    <a class="l-del del1"><img src="../images/admin/ico-del.svg" alt=""></a>
+                  </div>
+                </div>
+                <div>
+                  <p>날인 등록</p>
+                  <div class="img-add">
+                    <form id="imgForm2">
+                      <input type="file" id="file2">
+                    </form>
+                  </div>
+                  <div class="img">
+                    <img src="" alt="" id="view-img2">
+                    <a class="l-del del2"><img src="/images/front/mo/ico-img-del.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="cont cont1">
+                <div>
+                  <p>알림설정</p>
+                  <div class="label">
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>이메일</s>
+                    </label>
+                    <input type="email" placeholder="Honggildong@oops.co.kr" class="email">
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>문자메세지 알림</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>카카오톡 알림</s>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li class="list list1">
+                <a class="tit">탈퇴하기</a>
+                <div class="cont-wrap">
+                  <div class="cont">
+                    <div class="fir">
+                      <p class="p">탈퇴 안내사항</p>
+                      <p class="txt">탈퇴 후 동일한 메일로 재가입이 가능하지만,
+                        탈퇴한 계정과 연동되지 않습니다.<br class="web">
+                        현재 비밀번호를 입력하고 탈퇴하기를 누르시면
+                        위 내용에 동의하는 것으로 간주됩니다.</p>
+                    </div>
+                    <div>
+                      <p>메일 (회사)</p>
+                      <input type="email" placeholder="Honggildong@oops.co.kr" class="email">
+                    </div>
+                    <div>
+                      <p>비밀번호</p>
+                      <input type="number" placeholder="비밀번호를 입력해주세요">
+                    </div>
+                  </div>
+                  <a class="l-btn secession">탈퇴하기</a>
+                </div>
+              </li>
+            </ul>
+            <a class="l-btn save">저장하기</a>
+          </div>
+          <div class="p-cont p-cont2">
+            <div class="cont-wrap">
+              <div class="cont">
+                <p>기존 비밀번호</p>
+                <input type="number" placeholder="기존 비밀번호를 입력해주세요">
+                <p>새 비밀번호</p>
+                <input type="number" placeholder="새 비밀번호를 입력해주세요">
+                <p>새 비밀번호 확인</p>
+                <input type="number" placeholder="새 비밀번호를 다시 한 번 입력해주세요">
+              </div>
+              <a class="l-btn change">변경하기</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <footer data-include="../include/front/footer.html" class=""></footer>
+
+
+      <div class="popup">
+        <div class="dim"></div>
+        <div class="inner">
+          <p>정말 탈퇴하시겠어요?</p>
+          <div class="btns">
+            <a class="secess">탈퇴하기</a>
+            <a class="cancel">취소하기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/header.js"></script>
+  <script>
+    let tabs = document.querySelectorAll('.tab');
+    let tabWrap = document.querySelector('.tab-wrap');
+    Array.prototype.forEach.call(tabs, function(e,idx) {
+      e.addEventListener('click', function() {
+        tabWrap.classList.remove('tab-active1', 'tab-active2', 'tab-active3')
+        if(idx === 0) {
+          tabWrap.classList.add('tab-active1')
+        } else if(idx === 1) {
+          tabWrap.classList.add('tab-active2')
+        } else {
+          tabWrap.classList.add('tab-active3')
+        }
+      })
+    });
+    let lists = document.querySelectorAll('.list .tit');
+    Array.prototype.forEach.call(lists, function(e) {
+      e.addEventListener('click', function() {
+        if(e.parentNode.classList.contains('open')) {
+          e.parentNode.classList.remove('open')
+        } else {
+          e.parentNode.classList.add('open')
+        }
+      })
+    });
+
+    let edit = document.querySelectorAll('.edit');
+    let back = document.querySelectorAll('.cont-inner2 .btns a');
+    let cont1 = document.querySelector('.p-cont1');
+    Array.prototype.forEach.call(edit, function(e) {
+      e.addEventListener('click', function() {
+        cont1.classList.remove('inner1', 'inner2');
+        cont1.classList.add('inner2');
+      })
+    })
+    Array.prototype.forEach.call(back, function(e) {
+      e.addEventListener('click', function() {
+        cont1.classList.remove('inner2');
+        cont1.classList.add('inner1');
+      })
+    });
+    let inputFile = document.querySelectorAll('.input-file');
+    let upLoadNm = document.querySelectorAll('.upload-name');
+    let delBtns = document.querySelectorAll('.del-btn');
+    Array.prototype.forEach.call(inputFile, function(e,idx) {
+      $(e).on('change',function(){
+        var fileName = $(e).val();
+        nmPrint(fileName,idx);
+      });
+      function nmPrint(v,idx) {
+        $(upLoadNm[idx]).val(v);
+        $(delBtns[idx]).css('display','inline-block');
+      }
+    });
+
+    Array.prototype.forEach.call(delBtns, function(e, idx) {
+      e.addEventListener('click', function() {
+        $(upLoadNm[idx]).val('');
+        $(delBtns[idx]).css('display','none');
+      })
+    });
+
+    let reports = document.querySelectorAll('.report');
+    let cont3 = document.querySelector('.p-cont3');
+    Array.prototype.forEach.call(reports, function(e) {
+      e.addEventListener('click', function() {
+        cont3.classList.remove('inner1', 'inner2');
+        cont3.classList.add('inner2');
+      })
+    });
+
+    $(function() {
+      $("#file1").on('change', function(){
+        readURL1(this);
+      });
+    });
+    function readURL1(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          $('#view-img1').attr('src', e.target.result);
+          $('#view-img1').css('display','inline-block');
+          $('#view-img1').css('opacity',1);
+          $('.del1').css('opacity',1);
+        }
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+    $('.del1').on('click', function() {
+      $('#view-img1').attr('src', '');
+      $('.del1').css('opacity',0);
+    });
+
+    $(function() {
+      $("#file2").on('change', function(){
+        readURL2(this);
+      });
+    });
+    function readURL2(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          $('#view-img2').attr('src', e.target.result);
+          $('#view-img2').css('display','inline-block');
+          $('#view-img2').css('opacity',1);
+          $('.del2').css('opacity',1);
+        }
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+    $('.del2').on('click', function() {
+      $('#view-img2').attr('src', '');
+      $('.del2').css('opacity',0);
+    })
+
+    let secession = document.querySelector('.secession');
+    let popup = document.querySelector('.popup');
+    let popupClose = document.querySelectorAll('.popup .btns a');
+    secession.addEventListener('click', function() {
+      popup.classList.add('on');
+    });
+    Array.prototype.forEach.call(popupClose, function(e) {
+      e.addEventListener('click', function() {
+        popup.classList.remove('on');
+      })
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-front-m.css">
+  <link rel="stylesheet" href="/css/style-front-pc.css">
+  <script src="../js/include.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap page8 join">
+      <!--#####header tag에 login 클래스면 로그인 되어있는 상태-->
+      <!--#####header tag에 loout 클래스면 로그아웃 되어있는 상태-->
+      <header data-include="../include/front/header.html" class="h-header"></header>
+      <section>
+        <article class="arti1">
+          <h2>회원가입 하기</h2>
+          <div>
+            <ul>
+              <li>
+                <p>회사명</p>
+                <input type="text" placeholder="회사명을 알려주세요">
+              </li>
+              <li>
+                <p>메일 (회사)</p>
+                <input type="text" placeholder="회사용 메일 주소를 입력해주세요">
+              </li>
+              <li>
+                <p>비밀번호</p>
+                <input type="number" placeholder="비밀번호를 입력해주세요">
+              </li>
+              <li>
+                <p>비밀번호 확인</p>
+                <input type="text" placeholder="비밀번호를 다시 한 번 입력해주세요">
+              </li>
+            </ul>
+            <div class="agree">
+              <div class="all-chkd ip-wrap">
+                <label>
+                  <input type="checkbox" onclick="selectAll(this);">
+                  <i></i>
+                  <s>OOPS 가입 약관에 모두 동의 합니다.</s>
+                </label>
+              </div>
+              <div class="ip-wrap">
+                <label>
+                  <input type="checkbox">
+                  <i></i>
+                  <s>OOPS 이용약관 (필수)</s>
+                </label>
+                <a>전문보기</a>
+              </div>
+              <div class="ip-wrap">
+                <label>
+                  <input type="checkbox">
+                  <i></i>
+                  <s>개인정보취급방침 (필수)</s>
+                </label>
+                <a>전문보기</a>
+              </div>
+              <div class="ip-wrap">
+                <label>
+                  <input type="checkbox">
+                  <i></i>
+                  <s>마케팅정보 수집 동의 (필수)</s>
+                </label>
+                <a>전문보기</a>
+              </div>
+            </div>
+            <a class="joined">회원가입</a>
+          </div>
+        </article>
+      </section>
+      <footer data-include="../include/front/footer.html" class=""></footer>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/header.js"></script>
+  <script>
+    function selectAll(v) {
+      let chkboxs = document.querySelectorAll('.agree input');
+      chkboxs.forEach(function(chkd) {
+        chkd.checked = v.checked;
+      })
+    }
+  </script>
+</body>
+</html>

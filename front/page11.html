@@ -1,0 +1,1724 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-front-m.css">
+  <link rel="stylesheet" href="/css/style-front-pc.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="../js/include.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap prj page3 page5">
+      <!--#####header tag에 login 클래스면 로그인 되어있는 상태-->
+      <!--#####header tag에 loout 클래스면 로그아웃 되어있는 상태-->
+      <header data-include="../include/front/header.html" class="y-header"></header>
+      <section>
+        <article class="top1">
+          <h2>프로젝트 관리</h2>
+          <p>나의 사무실 이전사항을 확인해보세요.</p>
+        </article>
+        <article class="arti1">
+          <div class="tab-wrap tab-active1">
+            <a class="tab tab1">진행 예정</a>
+            <a class="tab tab2">진행 프로젝트</a>
+            <a class="tab tab3">완료 프로젝트</a>
+          </div>
+          <div class="p-cont p-cont1 inner1">
+            <div class="p-cont-inner p-cont-inner1">
+              <div class="t-txt">
+                <img src="/images/front/pc/ico-light.svg" alt="" class="web"><p>현재 OOPS에서 작성해주신 체크리스트를 토대로 내부검토를 진행하고 있는 프로젝트 목록입니다.<br class="web"> 내부검토 완료 후 상담 확정을 위해 유선 또는 이메일 연락을 할 예정이며 최대 영업일 기준 1~2일이 소요됩니다.</p>
+              </div>
+              <ul class="t-txt-box">
+                <li>
+                  <p>주식회사 베오리얼티  |  2022.01.03.</p>
+                  <div class="btns">
+                    <a class="edit">수정하기</a>
+                    <a class="view">내용보기</a>
+                  </div>
+                </li>
+                <li>
+                  <p>주식회사 베오리얼티  |  2022.01.03.</p>
+                  <div class="btns">
+                    <a class="edit">수정하기</a>
+                    <a class="view">내용보기</a>
+                  </div>
+                </li>
+                <li>
+                  <p>현재 사무실 정보</p>
+                  <div>
+                    <p class="txt">주소 : <s>서울특별시 종로구 공평동 종로 51</s></p>
+                    <p class="txt">인원 : <s>20명</s></p>
+                    <p class="txt">평수 : <s>10명</s></p>
+                  </div>
+                </li>
+                <li>
+                  <p>옮겨갈 사무실 정보</p>
+                  <div>
+                    <p class="txt">주소 : <s>서울특별시 서초구 반포대로22길 19-11<br class="mo"> 원빌딩 3층</s></p>
+                    <p class="txt">인원 : <s>20명</s></p>
+                    <p class="txt">평수 : <s>10명</s></p>
+                  </div>
+                </li>
+                <li>
+                  <p>입주 희망 시기</p>
+                  <div>
+                    <p class="txt txt1">가능한 빠르게</p>
+                  </div>
+                </li>
+                <li>
+                  <p>이용서비스</p>
+                  <a>매물찾기</a>
+                  <a>인테리어</a>
+                  <a>가구 구매 및 제작</a>
+                  <a>이사</a>
+                  <a>LAN 통신 구축</a>
+                </li>
+                <li>
+                  <p>상담 방식 및 일시</p>
+                  <div>
+                    <p class="txt">방식 : <s>사무실 방문을 통한 대면 상담</s></p>
+                    <p class="txt">일시 : <s>2022년 01월 20일 14:00 (미확정)</s></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="p-cont-inner p-cont-inner2">
+
+              <div class="questionnaire">
+                <ul>
+                  <li class="list list1">
+                    <a class="tit">기본 정보</a>
+                    <div class="cont-wrap">
+                      <div class="cont">
+                        <div>
+                          <p class="p1">회사명 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <input type="text" placeholder="회사명을 알려주세요" required="required">
+                        </div>
+                        <div>
+                          <p class="p1">담당자 성함/직함 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <input type="text" placeholder="담당자님 성함과 직함을 알려주세요">
+                        </div>
+                        <div>
+                          <p class="p1">이메일 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <input type="email" placeholder="이메일을 알려주세요 (회사메일)">
+                        </div>
+                        <div class="p1">
+                          <p>연락처 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <input type="number" placeholder="연락처를 알려주세요 ( - 제외)">
+                        </div>
+                      </div>
+                      <div class="cont cont2">
+                        <div>
+                          <p>현재 사무실 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <span>주소</span>
+                          <input type="text" placeholder="현재 사무실의 주소를 알려주세요">
+                          <span>인원</span>
+                          <input type="number" placeholder="현재 사무실의 인원 (명 수)을 알려주세요">
+                          <span>면적</span>
+                          <input type="text" placeholder="현재 사무실의 면적을 알려주세요">
+                        </div>
+                      </div>
+                      <div class="cont cont2">
+                        <div>
+                          <p>옮겨갈 사무실</p>
+                          <span>주소</span>
+                          <input type="text" placeholder="현재 사무실의 주소를 알려주세요">
+                          <span>인원</span>
+                          <input type="number" placeholder="현재 사무실의 인원 (명 수)을 알려주세요">
+                          <span>면적</span>
+                          <input type="text" placeholder="현재 사무실의 면적을 알려주세요">
+                        </div>
+                      </div>
+                      <div class="cont cont2">
+                        <div>
+                          <p>희망입주시기</p>
+                          <label>
+                            <input type="radio" name="period">
+                            <i></i>
+                            <s>가능한 빠르게</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="period">
+                            <i></i>
+                            <s>1개월 이내</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="period">
+                            <i></i>
+                            <s>2개월 이내</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="period">
+                            <i></i>
+                            <s>3개월 이내</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont2">
+                        <div>
+                          <p>산업분야 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>서비스업</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>건설업</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>금융·은행업</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>의료·제약업</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>IT·정보통신업</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>미디어·광고업</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>판매·유통업</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>문화·예술·디자인업</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>제조·생산·화학업</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>기관·협회</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>교육업</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont3">
+                        <div>
+                          <p>가장 중요한 것</p>
+                          <label>
+                            <input type="radio" name="rank">
+                            <i></i>
+                            <s>비용</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="rank">
+                            <i></i>
+                            <s>완성도</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="rank">
+                            <i></i>
+                            <s>기간</s>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list2">
+                    <a class="tit">부동산</a>
+                    <div class="cont-wrap">
+                      <div class="cont">
+                        <div>
+                          <p class="p1">지하철 역명 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <input type="number" placeholder="ex.  강남역, 잠실역 부근">
+                        </div>
+                      </div>
+                      <div class="cont cont3">
+                        <div>
+                          <p>요청 서비스</p>
+                          <label>
+                            <input type="radio" name="period">
+                            <i></i>
+                            <s>임대</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="period">
+                            <i></i>
+                            <s>매입</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="period">
+                            <i></i>
+                            <s>빌딩/부지 매입</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont2">
+                        <div>
+                          <p>중요한 조건 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>대형빌딩/사옥(전층)</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>신축 첫 임대 사무실</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>지하철역 인근</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>대로변</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>주택형/단독주택 사무실</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>저렴한 사무실</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>주차공간</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>개별난방</s>
+                          </label>
+                          <label class="etc">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>기타 :</s>
+                          </label>
+                          <input type="text">
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p>임대시, 보증금 범위를 선택해주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="cost">
+                            <i></i>
+                            <s>1만원 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="cost">
+                            <i></i>
+                            <s>1백~5백만원 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="cost">
+                            <i></i>
+                            <s>5백~1천만원 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="cost">
+                            <i></i>
+                            <s>1천~3천만원 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="cost">
+                            <i></i>
+                            <s>3천~1억 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="cost">
+                            <i></i>
+                            <s>1억~3억 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="cost">
+                            <i></i>
+                            <s>3억 이상</s>
+                          </label>
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p>임대시, 임대비 + 관리비 범위를 선택해주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="range">
+                            <i></i>
+                            <s>1백만원 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="range">
+                            <i></i>
+                            <s>1백~3백만원 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="range">
+                            <i></i>
+                            <s>3백~5백만원 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="range">
+                            <i></i>
+                            <s>5백~1천만원 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="range">
+                            <i></i>
+                            <s>1천~3천만원 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="range">
+                            <i></i>
+                            <s>3천~1억 미만</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="range">
+                            <i></i>
+                            <s>1억 이상</s>
+                          </label>
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont8">
+                        <div>
+                          <p>사무실 이전 검토 사유를 말씀해주세요</p>
+                          <p class="sub"><s>Tip.</s> OOPS가 사무실 이전 사유에 최적화된 서비스를 제공합니다.</p>
+                          <input type="text" placeholder="ex)계약기간 종료">
+                        </div>
+                      </div>
+                      <div class="cont cont8">
+                        <div>
+                          <p>이전검토시 고려사항을 알려주세요</p>
+                          <p class="sub"><s>Tip.</s> OOPS가 사무실 이전 사유에 최적화된 서비스를 제공합니다.</p>
+                          <input type="text" placeholder="ex)주차,전력,특수시설 등">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list3">
+                    <a class="tit">인테리어</a>
+                    <div class="cont-wrap">
+                      <div class="cont cont4">
+                        <div>
+                          <p>기존 가무 집기를 사용할 예정인가요? <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="yn">
+                            <i></i>
+                            <s>예</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="yn">
+                            <i></i>
+                            <s>아니오</s>
+                          </label>
+                          <label class="etc">
+                            <input type="radio" name="period">
+                            <i></i>
+                            <s>기타 :</s>
+                          </label>
+                          <input type="text">
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p>기존 사무실 원상복구가 필요하신가요? <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="yn2">
+                            <i></i>
+                            <s>예</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="yn2">
+                            <i></i>
+                            <s>아니오</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p>탕비공간에 싱크대가 필요하신가요? <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="yn3">
+                            <i></i>
+                            <s>예</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="yn3">
+                            <i></i>
+                            <s>아니오</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4 cont7">
+                        <div class="append-box">
+                          <p class="ap">팀 구성을 알려주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <div class="cont-inner">
+                            <p class="p1">부서명</p>
+                            <input type="text" placeholder="부서명을 입려해주세요">
+                            <p class="p1">인원</p>
+                            <input type="number" placeholder="0">
+                            <p class="p1">요구사항</p>
+                            <input type="text" placeholder=" ex) 출입이 잦아 입구와 가까운 곳으로 배치">
+                          </div>
+                          <a class="add">+ 부서 추가</a>
+                        </div>
+                      </div>
+                      <div class="cont cont2 cont8">
+                        <div>
+                          <p>필요공간 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>임원실</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>라운지</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>집중공간</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>창고</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>회의실</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>휴게공간</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>탕비실</s>
+                          </label>
+                          <label class="etc">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>기타 :</s>
+                          </label>
+                          <input type="text">
+                        </div>
+                      </div>
+                      <div class="cont">
+                        <div>
+                          <p class="p1">필요한 임원실 갯수</p>
+                          <input type="number" placeholder=" ex) 3">
+                        </div>
+                      </div>
+                      <div class="cont cont3">
+                        <div>
+                          <p>필요한 회의실 갯수 </p>
+                          <div class="cont-inner">
+                            <p class="p1">소회의실(4~6인)</p>
+                            <input type="number" placeholder=" ex) 3">
+                            <p class="p1">중회의실(6~12인)</p>
+                            <input type="number" placeholder=" ex) 3">
+                            <p class="p1">대회의실(12인 이상)</p>
+                            <input type="number" placeholder=" ex) 3">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cont cont11">
+                        <div>
+                          <p>선호하는 사무실 Mood Board <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s></s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s></s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s></s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s></s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s></s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s></s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s></s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s></s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s></s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont3">
+                        <div>
+                          <p>남녀 직원 비율 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="ratio">
+                            <i></i>
+                            <s>남1 : 여1</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="ratio">
+                            <i></i>
+                            <s>남2 : 여1</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="ratio">
+                            <i></i>
+                            <s>여2 : 남1</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="ratio">
+                            <i></i>
+                            <s>남자가 훨씬 많음</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="ratio">
+                            <i></i>
+                            <s>여자가 훨씬 많음</s>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list4">
+                    <a class="tit">통신/보안</a>
+                    <div class="cont-wrap">
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">보안 선호업체를 선택해주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>ADT 캡스(SKT쉴더스)</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>에스원 세콤</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>텔레캅(KT)</s>
+                          </label>
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">보안 종류를 선택해주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>출입통제(출퇴근)</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>출동 경비</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>CCTV 설치</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">통신 선호업체를 선택해주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>SKT</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>KT</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>LG U+</s>
+                          </label>
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">통신 선호업체를 선택해주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="agency">
+                            <i></i>
+                            <s>SKT</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="agency">
+                            <i></i>
+                            <s>KT</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="agency">
+                            <i></i>
+                            <s>LG U+</s>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list5">
+                    <a class="tit">사무가구</a>
+                    <div class="cont-wrap">
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">필요한 사무기구를 전부 선택하고 수량을 입력해주세요 <img src="/images/front/mo/ico-nec.svg" alt=""><br> (다중선택) </p>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>책상</s>
+                            </label>
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>의자</s>
+                            </label>
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>회의 테이블</s>
+                            </label>
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>책장</s>
+                            </label>
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>소파</s>
+                            </label>
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>파티션</s>
+                            </label>
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>락카/사물함</s>
+                            </label>
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>중역용 기구</s>
+                            </label>
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>모빌랙/경락랙/앵극</s>
+                            </label>
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <div class="input-wrap et-wr">
+                            <label class="etc">
+                              <input type="checkbox">
+                              <i></i>
+                              <s>기타 :</s>
+                            </label>
+                            <input type="text">
+                            <input type="number" placeholder="수량 (ex.5)" class="amount">
+                          </div>
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">사용하실 책상의 크기를 알려주세요 (다중선택) <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <div class="input-wrap">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>1200</s>
+                            </label>
+                            <span>(주로 사용하는 사이즈)</span>
+                          </div>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>1400</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>1600</s>
+                          </label>
+                          <label class="etc">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>기타 :</s>
+                          </label>
+                          <input type="text">
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">어떤 브랜드를 선호하시나요? <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>고가 브랜드</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>중가 브랜드</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>저가 브랜드</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>조달청</s>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list6">
+                    <a class="tit">렌탈</a>
+                    <div class="cont-wrap">
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">필요한 사무기구를 전부 선택해주세요 (다중선택) <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>에어컨</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>냉난방기</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>비데</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>정수기</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>생수</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>공기청정기</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>복합기</s>
+                          </label>
+                          <label class="etc">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>기타 :</s>
+                          </label>
+                          <input type="text">
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">렌탈 기간을 선택해주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="rentalperiod">
+                            <i></i>
+                            <s>1년</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="rentalperiod">
+                            <i></i>
+                            <s>2년</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="rentalperiod">
+                            <i></i>
+                            <s>3년 이상</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">어떤 브랜드를 선호하시나요? <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="brand">
+                            <i></i>
+                            <s>고가 브랜드</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="brand">
+                            <i></i>
+                            <s>중가 브랜드</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="brand">
+                            <i></i>
+                            <s>저가 브랜드</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p>필요한 제품과 수량을 함께 입력해주세요</p>
+                          <textarea>
+
+                  </textarea>
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4 cont-a">
+                        <div>
+                          <p class="sub-tit">*복합기 선택 시 응답해주세요</p>
+                          <p>복합기 렌탈시 필요한 기능을 선택해주세요 (다중선택)</p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>복합기</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>스캐너</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>팩스</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>출력</s>
+                          </label>
+                          <p class="p">기기의 옵션을 선택해주세요 (다중선택)</p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>칼라</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>흑백만</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>A3</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>A4</s>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list7">
+                    <a class="tit">이사</a>
+                    <div class="cont-wrap">
+                      <div class="cont">
+                        <div>
+                          <p class="sub1">이사를 희망하는 날짜를 알려주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <div class="input-date">
+                            <input type="date">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">현 사무실에서 이사물품을 반출할 방법을 알려주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="a">
+                            <i></i>
+                            <s>엘리베이터</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="a">
+                            <i></i>
+                            <s>계단</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="a">
+                            <i></i>
+                            <s>1층</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">새 사무실에서 이사물품을 반출할 방법을 알려주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="b">
+                            <i></i>
+                            <s>엘리베이터</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="b">
+                            <i></i>
+                            <s>계단</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="b">
+                            <i></i>
+                            <s>1층</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont5">
+                        <div>
+                          <p class="sub1">필요한 부가서비스를 선택해주세요 <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>필요없음</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>입주청소</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>폐기물</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>파쇄</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>냉난방기 이사</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>통신/네트워크</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>모빌랙</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>보관입주</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>생수/비데/공기청정기 (가전집기)</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="service">
+                            <i></i>
+                            <s>복합프린터</s>
+                          </label>
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="cont cont4 cont-a">
+                        <div>
+                          <p class="sub-tit">*파쇄 선택 시 응답해주세요</p>
+                          <p class="sub1">파쇄 방법을 선택해주세요</p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>현장파쇄<br class="mo"> <span>(파쇄차량과 보안요원이 방문하여 현장에서 고객 입회하에 보안문서를 파쇄)</span></s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>입고파쇄<br class="mo"> <span>(공장으로 이동후 파쇄)</span></s>
+                          </label>
+                          <p class="p2">파쇄 종류를 선택해주세요</p>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>문서</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>하드디스크</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>정산장비</s>
+                          </label>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>제품보안폐기</s>
+                          </label>
+                          <p class="p2">파쇄물량은 어느정도 입니까?</p>
+                          <textarea></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list8">
+                    <a class="tit">구독서비스</a>
+                    <div class="cont-wrap">
+                      <div class="cont cont4">
+                        <div>
+                          <p class="sub1">필요한 구독서비스를 골라주세요 (다중선택) <img src="/images/front/mo/ico-nec.svg" alt=""></p>
+                          <div class="cont-cell">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>사무실 환경</s>
+                            </label>
+                            <ol>
+                              <li>공기질 개선</li>
+                              <li>청소</li>
+                            </ol>
+                          </div>
+                          <div class="cont-cell">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>복지</s>
+                            </label>
+                            <ol>
+                              <li>의료/건강</li>
+                              <li>식사관련</li>
+                              <li>교육/훈련</li>
+                              <li>취미/자기계발</li>
+                            </ol>
+                          </div>
+                          <div class="cont-cell">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>비품관리</s>
+                            </label>
+                            <ol>
+                              <li>간식/음료/커피</li>
+                              <li>사무용품</li>
+                            </ol>
+                          </div>
+                          <div class="cont-cell">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>업무</s>
+                            </label>
+                            <ol>
+                              <li>OA</li>
+                              <li>클라우드</li>
+                              <li>협업툴</li>
+                            </ol>
+                          </div>
+                          <div class="cont-cell">
+                            <label>
+                              <input type="checkbox">
+                              <i></i>
+                              <s>브랜딩</s>
+                            </label>
+                            <ol>
+                              <li>명함/봉투</li>
+                              <li>회사 소개서, 주소 약도 변경</li>
+                              <li>거래처 및 관계사 변경 주소 및 전화번호 안내</li>
+                              <li>회사 명판 / 고무인</li>
+                              <li>홈페이지 변경</li>
+                            </ol>
+                          </div>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <s>유지보수</s>
+                          </label>
+                          <label class="later">
+                            <input type="checkbox">
+                            <i></i>
+                            <s>상담 이후 결정</s>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list9">
+                    <a class="tit">기타</a>
+                    <div class="cont-wrap">
+                      <div class="cont cont4">
+                        <div>
+                          <p>기타 요청사항을 알려주세요</p>
+                          <textarea></textarea>
+                        </div>
+                      </div>
+                      <div class="cont">
+                        <div>
+                          <p>파일 업로드 참고 파일을 업로드 해주세요</p>
+                          <div class="file-box">
+                            <input class="upload-name" placeholder="첨부파일">
+                            <a class="del-btn"></a>
+                            <label for="file">+ 파일 첨부</label>
+                            <input type="file" id="file" class="input-file">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list10">
+                    <a class="tit">요청사항</a>
+                    <div class="cont-wrap">
+                      <div class="cont">
+                        <div>
+                          <p>요청사항</p>
+                          <input type="text" placeholder="요청사항을 작성해주세요">
+                        </div>
+                        <div>
+                          <p>파일첨부</p>
+                          <div class="file-box">
+                            <input class="upload-name" placeholder="첨부파일">
+                            <a class="del-btn"></a>
+                            <label for="file1">+ 파일 첨부</label>
+                            <input type="file" id="file1" class="input-file">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list11">
+                    <a class="tit">상담일정 정하기</a>
+                    <div class="cont-wrap">
+                      <div class="cont cont1 cont2">
+                        <div>
+                          <p>선호방식</p>
+                          <label>
+                            <input type="radio" name="system">
+                            <i></i>
+                            <s>사무실 방문을 통한 대면상담</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="system">
+                            <i></i>
+                            <s>전화를 통한 비대면 상담</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="system">
+                            <i></i>
+                            <s>화상회의를 통한 비대면 상담</s>
+                          </label>
+                          <label>
+                            <input type="radio" name="system">
+                            <i></i>
+                            <s>메일을 통한 비대면 상담</s>
+                          </label>
+                        </div>
+
+                        <div class="reservation">
+                          <p>희망상담 일시</p>
+                          <p class="web sub-tit">날짜 선택</p>
+                          <div class="input-date">
+                            <input type="date">
+                          </div>
+                          <p class="web sub-tit">시간 선택</p>
+                          <div class="select">
+                            <select>
+                              <option value="">13:00</option>
+                              <option value="">14:00</option>
+                              <option value="">15:00</option>
+                              <option value="">16:00</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="noti">
+                          <img src="/images/front/pc/ico-light.svg" alt="" class="web"><p>본 예약은 가예약으로 문자메세지나 안내전화를 별도로 받으셔야만 예약이 확정됩니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="btns btns2">
+                <a class="back">뒤로가기</a>
+                <a class="save">저장하기</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-cont p-cont2">
+            <div class="select">
+              <select>
+                <option value="">주식회사 베오 리얼티 ㅣ 22.01.03</option>
+                <option value="">주식회사 베오 리얼티 ㅣ 22.01.03</option>
+                <option value="">주식회사 베오 리얼티 ㅣ 22.01.03</option>
+              </select>
+            </div>
+            <div class="questionnaire">
+              <ul>
+                <!--##### list에 complete 클래스 입력시 완료-->
+                <li class="list list1">
+                  <a class="tit">전체 일정</a>
+                  <div class="cont-wrap">
+                    <div class="cont cont1">
+                      <p class="p-t">입주까지 <span>20일</span>이 남았습니다!</p>
+
+                      <!-- #######bar에 width값에 따름-->
+                      <div class="bar-wrap">
+                        <span class="bar" style="width: 70%;"></span>
+                      </div>
+                    </div>
+                    <div class="cont cont2">
+                      <p>주소</p>
+                      <p class="txt">서울특별시 서초구 반포대로22길 19-11 원빌딩 3층</p>
+                    </div>
+                    <div class="cont cont2">
+                      <p>이용서비스</p>
+                      <a>매물찾기</a>
+                      <a>인테리어</a>
+                      <a>가구 구매 및 제작</a>
+                      <a>이사</a>
+                      <a>LAN 통신 구축</a>
+                    </div>
+                    <div class="cont">
+                      <p>프로젝트 시작일</p>
+                      <p class="txt">2022년 01월 03일</p>
+                    </div>
+                    <div class="cont">
+                      <p>프로젝트 종료일 </p>
+                      <p class="txt">2022년 01월 03일</p>
+                    </div>
+                    <div class="cont">
+                      <p>프로젝트 금액 </p>
+                      <p class="txt">일금 일억원정 (￦100,000,000)</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list list2">
+                  <a class="tit">상담 일정 확인 : 인테리어 자재결정 </a>
+                  <div class="cont-wrap">
+                    <div class="cont">
+                      <p>방식</p>
+                      <p class="txt">대면상담</p>
+                    </div>
+                    <div class="cont">
+                      <p>장소</p>
+                      <p class="txt">서울특별시 서초구 반포대로22길 19-11 원빌딩 3층</p>
+                    </div>
+                    <div class="cont">
+                      <p>상담일시</p>
+                      <p class="txt">2022년 01월 03일, 오후 3시</p>
+                    </div>
+                    <div class="cont">
+                      <p>담당자</p>
+                      <p class="txt">홍길동 팀장님</p>
+                    </div>
+                    <div class="cont">
+                      <p>연락처</p>
+                      <p class="txt">010-1234-5678</p>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- #######bar에 complete 클래스 들어가면 진행상황 100% 완료 및 완료 표시 뜸-->
+                <li class="list list3 complete">
+                  <a class="tit">부동산 <span></span></a>
+                  <div class="cont-wrap">
+                    <div class="cont cont1">
+                      <p class="status">진행상황 <span>100%</span></p>
+
+                      <!-- #######bar에 width값에 따름-->
+                      <div class="bar-wrap">
+                        <span class="bar" style="width: 100%;"></span>
+                      </div>
+                    </div>
+                    <div class="cont">
+                      <p>일정확인</p>
+                      <p class="txt">예약 일정이 없습니다.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <!--##### list에 ing 클래스 입력시 진행중-->
+                <li class="list list3 ing">
+                  <a class="tit">인테리어 <span></span></a>
+                  <div class="cont-wrap">
+                    <div class="cont cont1">
+                      <p class="status">진행상황 <span>80%</span></p>
+
+                      <!-- #######bar에 width값에 따름-->
+                      <div class="bar-wrap">
+                        <span class="bar" style="width: 80%;"></span>
+                      </div>
+                    </div>
+                    <div class="cont">
+                      <p class="vt">일정확인</p>
+                      <p class="txt1">대면상담 : 2022년 01월 03일<br>공사시작 : 2022년 01월 30일</p>
+                    </div>
+                  </div>
+                </li>
+
+                <!--##### list에 stay 클래스 입력시 대기-->
+                <li class="list list4 stay">
+                  <a class="tit">이사 <span></span></a>
+                  <div class="cont-wrap">
+                    <div class="cont cont1">
+                      <p class="status">진행상황 <span>80%</span></p>
+
+                      <!-- #######bar에 width값에 따름-->
+                      <div class="bar-wrap">
+                        <span class="bar" style="width: 80%;"></span>
+                      </div>
+                    </div>
+                    <div class="cont">
+                      <p class="vt">일정확인</p>
+                      <p class="txt1">대면상담 : 2022년 01월 03일<br>공사시작 : 2022년 01월 30일</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+          <div class="p-cont p-cont3 inner1">
+            <div class="p-cont-inner p-cont-inner1">
+              <ul class="t-txt-box">
+                <li>
+                  <p>주식회사 베오리얼티  |  2022.01.03.</p>
+                  <div class="btns">
+                    <a class="report">보고서 보기</a>
+                    <a href="/front/page12.html" class="view">유지보수 요청</a>
+                  </div>
+                </li>
+                <li>
+                  <p>주식회사 베오리얼티  |  2022.01.03.</p>
+                  <div class="btns">
+                    <a class="report">보고서 보기</a>
+                    <a href="/front/page12.html" class="view">유지보수 요청</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="p-cont-inner p-cont-inner2">
+              <div class="questionnaire">
+                <ul>
+                  <li class="list list1">
+                    <a class="tit">기본 정보</a>
+                    <div class="cont-wrap">
+                      <div class="cont cont2">
+                        <p>주소</p>
+                        <p class="txt">서울특별시 서초구 반포대로22길 19-11 원빌딩 3층</p>
+                      </div>
+                      <div class="cont cont2">
+                        <p>이용서비스</p>
+                        <a>매물찾기</a>
+                        <a>인테리어</a>
+                        <a>가구 구매 및 제작</a>
+                        <a>이사</a>
+                        <a>LAN 통신 구축</a>
+                      </div>
+                      <div class="cont">
+                        <p>프로젝트 시작일</p>
+                        <p class="txt">2022년 01월 03일</p>
+                      </div>
+                      <div class="cont">
+                        <p>프로젝트 종료일 </p>
+                        <p class="txt">2022년 01월 03일</p>
+                      </div>
+                      <div class="cont">
+                        <p>프로젝트 금액 </p>
+                        <p class="txt">일금 일억원정 (￦100,000,000)</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list list2">
+                    <a class="tit">상담일정 확인 : 인테리어 자재 결정</a>
+                    <div class="cont-wrap">
+                      <div class="cont">
+                        <p>방식</p>
+                        <p class="txt">대면상담</p>
+                      </div>
+                      <div class="cont">
+                        <p>장소</p>
+                        <p class="txt">서울특별시 서초구 반포대로22길 19-11 원빌딩 3층</p>
+                      </div>
+                      <div class="cont">
+                        <p>상담일시</p>
+                        <p class="txt">2022년 01월 03일, 오후 3시</p>
+                      </div>
+                      <div class="cont">
+                        <p>담당자</p>
+                        <p class="txt">홍길동 팀장님</p>
+                      </div>
+                      <div class="cont">
+                        <p>연락처</p>
+                        <p class="txt">010-1234-5678</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="arti12">
+          <h2>더 궁금하신 내용이 있으신가요?</h2>
+          <p class="txt">1:1 문의하기를 통해 질문 주시면<br class="mo"> 빠른 시일 내에 답변 드리도록 하겠습니다.</p>
+          <a href="/front/page8.html" class="l-btn qna">1:1 문의하기</a>
+          <a href="/front/page1.html" class="apply">간편 상담 바로가기</a>
+          <img src="/images/front/mo/cir3.svg" alt="" class="mo img1">
+          <img src="/images/front/mo/cir3.svg" alt="" class="mo img2">
+          <img src="/images/front/pc/cir3.svg" alt="" class="web img1">
+          <img src="/images/front/pc/cir4.svg" alt="" class="web img2">
+          <img src="/images/front/pc/oops1.svg" alt="" class="web oops">
+        </article>
+      </section>
+      <footer data-include="../include/front/footer.html" class=""></footer>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/header.js"></script>
+  <script>
+    let tabs = document.querySelectorAll('.tab');
+    let tabWrap = document.querySelector('.tab-wrap');
+    let section = document.querySelector('section');
+    Array.prototype.forEach.call(tabs, function(e,idx) {
+      e.addEventListener('click', function() {
+        tabWrap.classList.remove('tab-active1', 'tab-active2', 'tab-active3');
+        section.classList.remove('arti12-active');
+        if(idx === 0) {
+          tabWrap.classList.add('tab-active1');
+        } else if(idx === 1) {
+          tabWrap.classList.add('tab-active2');
+          section.classList.add('arti12-active');
+        } else {
+          tabWrap.classList.add('tab-active3');
+        }
+      })
+    });
+    let lists = document.querySelectorAll('.list .tit');
+    Array.prototype.forEach.call(lists, function(e) {
+      e.addEventListener('click', function() {
+        if(e.parentNode.classList.contains('open')) {
+          e.parentNode.classList.remove('open')
+        } else {
+          e.parentNode.classList.add('open')
+        }
+      })
+    });
+
+    let edit = document.querySelectorAll('.edit');
+    let back = document.querySelectorAll('.p-cont-inner2 .btns a');
+    let cont1 = document.querySelector('.p-cont1');
+    Array.prototype.forEach.call(edit, function(e) {
+      e.addEventListener('click', function() {
+        cont1.classList.remove('inner1', 'inner2');
+        cont1.classList.add('inner2');
+      })
+    })
+    Array.prototype.forEach.call(back, function(e) {
+      e.addEventListener('click', function() {
+        cont1.classList.remove('inner2');
+        cont1.classList.add('inner1');
+      })
+    });
+    let inputFile = document.querySelectorAll('.input-file');
+    let upLoadNm = document.querySelectorAll('.upload-name');
+    let delBtns = document.querySelectorAll('.del-btn');
+    Array.prototype.forEach.call(inputFile, function(e,idx) {
+      $(e).on('change',function(){
+        var fileName = $(e).val();
+        nmPrint(fileName,idx);
+      });
+      function nmPrint(v,idx) {
+        $(upLoadNm[idx]).val(v);
+        $(delBtns[idx]).css('display','inline-block');
+      }
+    });
+
+    Array.prototype.forEach.call(delBtns, function(e, idx) {
+      e.addEventListener('click', function() {
+        $(upLoadNm[idx]).val('');
+        $(delBtns[idx]).css('display','none');
+      })
+    });
+
+    let reports = document.querySelectorAll('.report');
+    let cont3 = document.querySelector('.p-cont3');
+    Array.prototype.forEach.call(reports, function(e) {
+      e.addEventListener('click', function() {
+        cont3.classList.remove('inner1', 'inner2');
+        cont3.classList.add('inner2');
+      })
+    });
+    let add = document.querySelector('.add');
+    add.addEventListener('click', function() {
+      domClone();
+    })
+    function domClone() {
+      let department = '<div class="cont-inner">\n' +
+                          '<p class="p1">부서명</p>\n' +
+                          '<input type="text" placeholder="부서명을 입려해주세요">\n' +
+                          '<p class="p1">인원</p>\n' +
+                          '<input type="number" placeholder="0">\n' +
+                          '<p class="p1">요구사항</p>\n' +
+                          '<input type="text" placeholder=" ex) 출입이 잦아 입구와 가까운 곳으로 배치">\n' +
+                          '<a class="del" onclick="delNode(this);"></a>\n' +
+                        '</div>'
+      $('.list3 .cont7 .append-box').append(department)
+    }
+    function delNode(v) {
+      v.parentNode.remove();
+    }
+    let inputChkd = document.querySelectorAll('.input-wrap input[type=checkbox]');
+    Array.prototype.forEach.call(inputChkd, function(e) {
+      e.addEventListener('click', function() {
+        let par = e.parentNode.parentNode;
+        let chk = e.checked
+        if(chk) {
+          par.classList.add('on');
+        } else {
+          par.classList.remove('on');
+        }
+      })
+    })
+  </script>
+</body>
+</html>

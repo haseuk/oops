@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-front-m.css">
+  <link rel="stylesheet" href="/css/style-front-pc.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="../js/include.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap page7">
+      <!--#####header tag에 login 클래스면 로그인 되어있는 상태-->
+      <!--#####header tag에 loout 클래스면 로그아웃 되어있는 상태-->
+      <header data-include="../include/front/header.html" class="h-header"></header>
+      <section>
+        <article>
+          <h2>서울대학교 예술관</h2>
+          <div class="view-wrap">
+            <div class="view">
+              <!-- ###### thumb 클릭시 choice + 번호.png 로 넘김-->
+              <div class="img"><img src="/images/front/pc/choice1.png" alt=""></div>
+              <a class="view-pop"></a>
+            </div>
+            <a class="thumb"><img src="/images/front/pc/thumb1.png" alt=""></a>
+            <a class="thumb"><img src="/images/front/pc/thumb2.png" alt=""></a>
+            <a class="thumb"><img src="/images/front/pc/thumb3.png" alt=""></a>
+            <a class="thumb"><img src="/images/front/pc/thumb4.png" alt=""></a>
+            <a class="thumb"><img src="/images/front/pc/thumb5.png" alt=""></a>
+            <a class="thumb"><img src="/images/front/pc/thumb6.png" alt=""></a>
+            <a class="thumb"><img src="/images/front/pc/thumb7.png" alt=""></a>
+            <a class="thumb"><img src="/images/front/pc/thumb8.png" alt=""></a>
+          </div>
+          <div class="view-info">
+            <ul>
+              <li>
+                <em>고객</em><p>서울대학교</p>
+              </li>
+              <li>
+                <em>지역</em><p>서울시 관악구</p>
+              </li>
+              <li>
+                <em>인원</em><p>200명 수용</p>
+              </li>
+              <li>
+                <em>서비스</em><p>서비스 이름 01, 서비스 이름 02</p>
+              </li>
+              <li>
+                <em>공사면적</em><p>2,000㎡</p>
+              </li>
+              <li>
+                <em>준공일</em><p>2021.06.13.</p>
+              </li>
+              <li>
+                <em>공사기간</em><p>8개월</p>
+              </li>
+            </ul>
+          </div>
+          <a href="/front/page1.html" class="apply">간편 상담 바로가기</a>
+        </article>
+      </section>
+      <footer data-include="../include/front/footer.html" class=""></footer>
+      <div class="popup">
+        <div class="dim"></div>
+        <div class="inner">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/images/front/pc/choice1.png" alt=""></div>
+              <div class="swiper-slide"><img src="/images/front/pc/choice2.png" alt=""></div>
+              <div class="swiper-slide"><img src="/images/front/pc/choice3.png" alt=""></div>
+            </div>
+            <div class="swiper-button swiper-button-next"></div>
+            <div class="swiper-button swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/header.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    let thumbs = document.querySelectorAll('.thumb');
+    let view = document.querySelector('.view-wrap .view img');
+    let viewImg = '/images/front/pc/choice1.png';
+    Array.prototype.forEach.call(thumbs, function(item,idx) {
+      item.addEventListener('click', function() {
+        let num = idx + 1;
+        viewImg = '/images/front/pc/choice'+num+'.png';
+        view.src = viewImg;
+      })
+    });
+    let popup = document.querySelector('.popup');
+    let popupDim = document.querySelector('.popup .dim');
+    let popupImg = document.querySelector('.popup img');
+    let popupOpen = document.querySelector('.view-pop');
+    popupOpen.addEventListener('click', function() {
+      popup.classList.add('open');
+      // popupImg.src = viewImg;
+    });
+    popupDim.addEventListener('click', function() {
+      popup.classList.remove('open');
+    });
+
+    new Swiper('.mySwiper.swiper', {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

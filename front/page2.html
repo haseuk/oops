@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-front-m.css">
+  <link rel="stylesheet" href="/css/style-front-pc.css">
+  <script src="../js/include.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap page2">
+      <header data-include="../include/front/header.html" class="b-header"></header>
+      <section>
+        <article>
+          <h2>필요한 서비스를<br class="mo"> 선택해주시길 바랍니다.</h2>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>사무실 매물찾기 서비스</s>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>인테리어 서비스</s>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>가구 구매 및 제작 서비스</s>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>이사 서비스</s>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>LAN 통신 구축 서비스</s>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>보안 서비스</s>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>렌탈 서비스 (프린터, 정수기 등)</s>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>복지 서비스 (간식, 물품 등)</s>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox">
+                <i></i>
+                <s>유지보수 관리 서비스</s>
+              </label>
+            </li>
+          </ul>
+          <a onclick="goApply()" class="l-btn next">다음으로</a>
+        </article>
+      </section>
+      <footer data-include="../include/front/footer.html" class=""></footer>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/header.js"></script>
+  <script>
+    temp = location.href.split('?');
+    history.replaceState(temp, '', 'page2.html');
+    let type;
+    if(temp.length === 2) {
+      type = temp[1];
+      localStorage.setItem('type', type);
+    }
+    function goApply() {
+      location.href = 'page3.html?' + type;
+    }
+  </script>
+</body>
+</html>

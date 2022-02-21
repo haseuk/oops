@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-front-m.css">
+  <link rel="stylesheet" href="/css/style-front-pc.css">
+  <script src="../js/include.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap page1">
+      <header data-include="../include/front/header.html" class="b-header"></header>
+      <section>
+        <article>
+          <h2>원하신다면 더욱<br class="mo"> 자세한 상담도 가능합니다</h2>
+          <ul>
+            <li>
+              <a onclick="goApply('simply');">
+                <p class="tit">간편 상담만 받기</p>
+                <div class="web time"><img src="/images/front/pc/clock.svg" alt=""> <p>소요시간 1~3분</p></div>
+                <p class="txt">간이 체크리스트만 작성하여<br> 간략한 상담을 받으세요.</p>
+              </a>
+              <a onclick="goApply('simply');" class="web l-btn">간편 상담 바로가기</a>
+            </li>
+            <li>
+              <a onclick="goApply('detail');">
+                <p class="tit">상세 상담 받기</p>
+                <div class="web time"><img src="/images/front/pc/clock.svg" alt=""> <p>소요시간 10~15분</p></div>
+                <p class="txt">심층적인 체크리스트 작성하여<br> 더욱 빠르게 사무실 이전을 진행하세요.</p>
+              </a>
+              <a onclick="goApply('detail');" class="web l-btn">간편 상담 바로가기</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <footer data-include="../include/front/footer.html" class=""></footer>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/header.js"></script>
+  <script>
+    function goApply(v) {
+      location.href = 'page2.html?' + v;
+    }
+  </script>
+</body>
+</html>
