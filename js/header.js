@@ -48,4 +48,18 @@ window.onload = function() {
       logPop.classList.remove('on');
     });
   },100)
+
+  let link = document.location.pathname;
+  let linkNum = link.replace(/[^0-9]/g, '');
+  let menuList = document.querySelectorAll('.menu-list .list')
+  console.log(menuList[1], linkNum)
+  if(linkNum === '1' || linkNum === '2' || linkNum === '3') {
+    menuList[0].classList.add('active');
+  } else if(linkNum === '4' || linkNum === '5') {
+    menuList[1].classList.add('active');
+  } else if(linkNum === '6' || linkNum === '7') {
+    menuList[2].classList.add('active');
+  } else {
+    menuList[3].classList.add('active');
+  }
 }

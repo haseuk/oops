@@ -37,6 +37,11 @@
     margin-top: 2.77777778rem;
     box-sizing: border-box;
   }
+  .l-btn:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
+  }
   .container .wrap {
     color: #191919;
     position: relative;
@@ -91,6 +96,9 @@
     right: 5.11111111rem;
     display: inline-block;
   }
+  .container .wrap header .inner .logged:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
   .container .wrap header .inner .logout {
     width: 3.61111111rem;
     height: 3.61111111rem;
@@ -103,6 +111,9 @@
     display: inline-block;
     color: #fff;
     border: 0;
+  }
+  .container .wrap header .inner .member:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   .container .wrap header .inner .menu-list {
     display: inline-block;
@@ -126,6 +137,14 @@
     padding-left: 1.66666667rem;
     font-weight: 500;
     position: relative;
+  }
+  .container .wrap header .inner .menu-list ul li.active {
+    color: #07364A;
+    font-weight: 700;
+  }
+  .container .wrap header .inner .menu-list ul li:hover {
+    color: #07364A;
+    font-weight: 700;
   }
   .container .wrap header .inner .menu-list ul li a {
     width: 100%;
@@ -162,6 +181,11 @@
     line-height: 0.94444444rem;
     display: block;
     text-align: center;
+  }
+  .container .wrap header .inner .menu-list ul li .depth-ul li:hover {
+    color: #191919;
+    font-weight: 700;
+    text-decoration: underline;
   }
   .container .wrap header .inner .menu-list ul li .depth-ul li:last-child {
     margin-bottom: 0rem;
@@ -203,6 +227,11 @@
     float: none;
     cursor: pointer;
   }
+  .container .wrap header.login .inner .bell:hover {
+    background-repeat: no-repeat;
+    background-image: url('/images/front/pc/bell-on.svg');
+    background-size: contain;
+  }
   .container .wrap header.login .inner .logout {
     position: absolute;
     right: 0rem;
@@ -242,6 +271,11 @@
   .container .wrap header.login .inner .logout:hover {
     height: 4rem;
   }
+  .container .wrap header.login .inner .logout:hover:before {
+    background-repeat: no-repeat;
+    background-image: url('/images/front/pc/logined-on.svg');
+    background-size: contain;
+  }
   .container .wrap header.login .inner .logout:hover ~ .my-page {
     display: inline-block;
   }
@@ -276,6 +310,11 @@
     display: block;
     text-align: center;
     position: relative;
+  }
+  .container .wrap header.login .inner .my-page ul li:hover {
+    color: #191919;
+    font-weight: 700;
+    text-decoration: underline;
   }
   .container .wrap header.login .inner .my-page ul li a {
     width: 100%;
@@ -498,7 +537,11 @@
     border-radius: 1.44444444rem;
     display: inline-block;
     margin-top: 2.22222222rem;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.12);
+  }
+  .container .wrap section article .apply:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
   }
   .container .wrap section article .questionnaire ul {
     margin-top: 3.33333333rem;
@@ -620,6 +663,7 @@
     vertical-align: middle;
     margin-right: 0.55555556rem;
     position: relative;
+    cursor: pointer;
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont label input[type=radio]:checked + i:after {
     content: '';
@@ -644,6 +688,7 @@
     vertical-align: top;
     margin-right: 0.44444444rem;
     position: relative;
+    cursor: pointer;
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont label input[type=checkbox]:checked + i {
     background-color: #FFB50F;
@@ -686,6 +731,7 @@
     border: 1px solid #aaa;
     box-sizing: border-box;
     margin-right: 0.44444444rem;
+    cursor: pointer;
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .later input[type=checkbox]:checked + i {
     width: 0.88888889rem;
@@ -1338,9 +1384,13 @@
     vertical-align: middle;
     margin-bottom: 0rem;
     margin-right: 0.55555556rem;
+    padding-top: 0rem;
+    padding-right: 0.88888889rem;
+    padding-bottom: 0rem;
+    padding-left: 0.88888889rem;
   }
   .container .wrap section article .questionnaire ul li.list10 .cont-wrap .cont .file-box .del-btn {
-    left: 22.72222222rem;
+    left: 21.83333333rem;
     top: 0.66666667rem;
     right: auto;
     bottom: auto;
@@ -1517,6 +1567,13 @@
     margin-right: 1rem;
     margin-bottom: 1rem;
     margin-left: 0rem;
+  }
+  .container .wrap.main section article.top ul li:hover label i {
+    border: 2px solid #FFB50F;
+    z-index: 1;
+    border-radius: 0.66666667rem;
+    box-sizing: border-box;
+    position: relative;
   }
   .container .wrap.main section article.top ul li label {
     width: 100%;
@@ -1738,10 +1795,14 @@
     right: auto;
     top: auto;
     margin-left: 8.77777778rem;
+    z-index: 1;
   }
   .container .wrap.main section article.top .apply:after,
   .container .wrap.main section article.top .apply:before {
     display: none;
+  }
+  .container .wrap.main section article.top .apply:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   .container .wrap.main section article.arti1 {
     position: relative;
@@ -2073,6 +2134,10 @@
     box-sizing: border-box;
     border: 2px solid rgba(255, 255, 255, 0.4);
   }
+  .container .wrap.main section article.arti5 .intro:hover {
+    background-color: #FFB50F;
+    border: 1px solid #FFB50F;
+  }
   .container .wrap.main section article.arti6 {
     padding-top: 6.66666667rem;
     padding-right: 0rem;
@@ -2170,6 +2235,11 @@
     height: 2.77777778rem;
     line-height: 2.77777778rem;
     margin-top: 2.77777778rem;
+  }
+  .container .wrap.main section article.arti7 .apply:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
   }
   .container .wrap.page1 section article {
     padding-top: 6.11111111rem;
@@ -2280,6 +2350,11 @@
     background-color: #FFB50F;
     margin-top: 2.22222222rem;
   }
+  .container .wrap.page1 section article ul li .l-btn:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
+  }
   .container .wrap.page2 section article h2 {
     font-size: 1.33333333rem;
     line-height: 1.61111111rem;
@@ -2321,6 +2396,7 @@
     vertical-align: top;
     margin-right: 0.88888889rem;
     position: relative;
+    cursor: pointer;
   }
   .container .wrap.page2 section article ul li label input[type=checkbox]:checked + i {
     background-color: #FFB50F;
@@ -2354,6 +2430,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .container .wrap.page2 section article .next:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
   }
   .container .wrap.page3 section article.agree {
     padding-top: 4.44444444rem;
@@ -2390,6 +2471,7 @@
     vertical-align: top;
     margin-right: 0.44444444rem;
     position: relative;
+    cursor: pointer;
   }
   .container .wrap.page3 section article.agree label input[type=checkbox]:checked + i {
     background-color: #FFB50F;
@@ -2460,6 +2542,11 @@
     margin-left: 0rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  .container .wrap.page3 section .submit:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
   }
   .container .wrap.page3 footer .inner .apply {
     display: none;
@@ -2541,12 +2628,18 @@
   .container .wrap.page3 .popup .inner.non-m .btns a {
     width: 7.5rem;
   }
+  .container .wrap.page3 .popup .inner.non-m .btns a:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
   .container .wrap.page3 .popup .inner.memb .non-members {
     display: none;
   }
   .container .wrap.page3 .popup .inner.memb .btns a {
     width: 100%;
     background-color: #FFB50F;
+  }
+  .container .wrap.page3 .popup .inner.memb .btns a:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   .container .wrap.page3 .popup .inner.memb .btns a.sign-up {
     display: none;
@@ -2614,6 +2707,11 @@
     cursor: pointer;
     position: relative;
     z-index: 1;
+  }
+  .container .wrap.page4 section article.arti1 .intro-down:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
   }
   .container .wrap.page4 section article.arti2 {
     padding-top: 6.11111111rem;
@@ -2925,6 +3023,11 @@
     margin-top: 3.33333333rem;
     color: #191919;
   }
+  .container .wrap.page4 section article.arti4 .more:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
+  }
   .container .wrap.page4 section article.arti5 {
     padding-top: 4.44444444rem;
     padding-right: 0rem;
@@ -2994,6 +3097,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .container .wrap.page4 section article.arti5 a:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
+  }
   .container .wrap.page4 section article.arti5 .cooper {
     margin-top: 4.44444444rem;
   }
@@ -3005,6 +3113,9 @@
     color: #fff;
     background-color: #FFB50F;
     margin-top: 0.88888889rem;
+  }
+  .container .wrap.page4 section article.arti5 .apply:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   .container .wrap.page5 section article {
     text-align: center;
@@ -3110,6 +3221,12 @@
     color: #fff;
     position: relative;
     z-index: 1;
+  }
+  .container .wrap.page5 section article.step .intro:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #FFB50F;
+    border: 1px solid #FFB50F;
+    color: #fff;
   }
   .container .wrap.page5 section article.steps {
     text-align: left;
@@ -3384,6 +3501,12 @@
     position: relative;
     z-index: 1;
   }
+  .container .wrap.page5 section article.arti12 .qna:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
+    border: 2px solid #07364A;
+  }
   .container .wrap.page5 section article.arti12 .apply {
     font-size: 0.88888889rem;
     width: 11.66666667rem;
@@ -3395,6 +3518,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .container .wrap.page5 section article.arti12 .apply:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
   }
   .container .wrap.page5 section article.arti12 .img1 {
     width: 9.72222222rem;
@@ -3533,6 +3661,11 @@
   }
   .container .wrap.page6 section article .apply {
     margin-top: 1.11111111rem;
+  }
+  .container .wrap.page6 section article .apply:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #07364A;
+    color: #fff;
   }
   .container .wrap.page7 section article h2 {
     margin-bottom: 2.77777778rem;
@@ -3746,6 +3879,7 @@
     height: 1rem;
     border-radius: 0.11111111rem;
     margin-right: 0.44444444rem;
+    cursor: pointer;
   }
   .container .wrap.page8 section article.arti1 .agree label input[type=checkbox]:checked + i:after {
     content: '';
@@ -3858,6 +3992,9 @@
   .container .wrap.page8 section article .apply {
     margin-top: 0.88888889rem;
   }
+  .container .wrap.page8 section article .apply:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
   .container .wrap.join section article.arti1 {
     width: 19.11111111rem;
     margin-left: auto;
@@ -3941,6 +4078,12 @@
     color: #191919;
     font-weight: 600;
   }
+  .container .wrap.join section article.arti1.pass-find {
+    padding-top: 8.33333333rem;
+  }
+  .container .wrap.join section article.arti1.pass-find .joined {
+    margin-top: 0rem;
+  }
   .container .wrap.join section article .joined {
     font-size: 0.88888889rem;
     width: 100%;
@@ -3949,6 +4092,9 @@
     border-radius: 1.11111111rem;
     background-color: #FFB50F;
     margin-top: 1.38888889rem;
+  }
+  .container .wrap.join section article .joined:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   .container .wrap.prj section article.arti1 {
     width: 40rem;
@@ -4064,6 +4210,9 @@
     margin-bottom: 0rem;
     margin-left: 0.44444444rem;
   }
+  .container .wrap.prj section article.arti1 .p-cont .p-cont-inner .t-txt-box li .btns a:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
   .container .wrap.prj section article.arti1 .p-cont .p-cont-inner .t-txt-box li div {
     display: inline-block;
     vertical-align: top;
@@ -4096,6 +4245,9 @@
     background-color: #FFB50F;
     color: #fff;
     border: 0;
+  }
+  .container .wrap.prj section article.arti1 .p-cont .p-cont-inner2 .btns a:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   .container .wrap.prj section article.arti1 .p-cont.inner1 .p-cont-inner1,
   .container .wrap.prj section article.arti1 .p-cont.inner2 .p-cont-inner2 {
@@ -4862,6 +5014,7 @@
     vertical-align: top;
     margin-right: 0.44444444rem;
     position: relative;
+    cursor: pointer;
   }
   .container .wrap.page14 section article.arti1 .p-cont .cont-wrap .cont label input[type=checkbox]:checked + i {
     background-color: #FFB50F;
@@ -5070,6 +5223,9 @@
     vertical-align: middle;
     z-index: 1;
   }
+  .container .wrap.page14 .popup .inner .btns a:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
   .container .wrap.page14 .popup .inner .btns a.cancel {
     margin-right: 0rem;
   }
@@ -5224,6 +5380,7 @@
     vertical-align: top;
     margin-right: 0.33333333rem;
     position: relative;
+    cursor: pointer;
   }
   .container .wrap.page15 section article .label-wrap label input[type=checkbox]:checked + i {
     background-color: #FFB50F;

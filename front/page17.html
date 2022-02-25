@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-front-m.css">
+  <link rel="stylesheet" href="/css/style-front-pc.css">
+  <script src="../js/include.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap page8 join">
+      <!--#####header tag에 login 클래스면 로그인 되어있는 상태-->
+      <!--#####header tag에 loout 클래스면 로그아웃 되어있는 상태-->
+      <header data-include="../include/front/header.html" class="h-header"></header>
+      <section>
+        <article class="arti1 pass-find">
+          <h2>비밀번호 찾기</h2>
+          <div>
+            <ul>
+              <li>
+                <p>메일 (회사)</p>
+                <input type="text" placeholder="회사용 메일 주소를 입력해주세요">
+              </li>
+            </ul>
+            <a class="joined">이메일로 인증코드 받기</a>
+          </div>
+        </article>
+      </section>
+      <footer data-include="../include/front/footer.html" class=""></footer>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/header.js"></script>
+  <script>
+    function selectAll(v) {
+      let chkboxs = document.querySelectorAll('.agree input');
+      chkboxs.forEach(function(chkd) {
+        chkd.checked = v.checked;
+      })
+    }
+  </script>
+</body>
+</html>
