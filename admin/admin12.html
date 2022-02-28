@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OOPS</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/style-admin.css">
+  <script src="/js/include.js" defer></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" ></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <aside data-include="../include/admin/aside.html"></aside>
+      <section class="admin2 admin10 admin11 admin12">
+        <article class="search-art">
+          <div class="search-exel">
+            <a class="back-btn"><img src="../images/admin/ico-back.svg" alt=""> 뒤로가기</a>
+          </div>
+        </article>
+        <article class="all-table">
+          <h4>관리자 권한 / 전체 관리자 수 <s>3유형</s></h4>
+          <div class="btns">
+            <a class="list-align"><img src="../images/admin/ico-ham.svg" alt=""> 정렬</a>
+            <a class="addition-btn">추가하기</a>
+          </div>
+          <div class="table">
+            <table cellspacing="0" cellpadding="0" border="0">
+              <colgroup>
+                <col width="45">
+                <col width="222">
+                <col width="225">
+                <col width="225">
+                <col width="225">
+                <col width="225">
+                <col width="225">
+              </colgroup>
+              <tr>
+                <th>
+                  <label>
+                    <input type="checkbox" onclick="selectAll(this);">
+                    <i></i>
+                  </label>
+                </th>
+                <th>ID</th>
+                <th>이름</th>
+                <th>권한</th>
+                <th>생성일</th>
+                <th>삭제하기</th>
+                <th>수정하기</th>
+              </tr>
+              <tr>
+                <td>
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>Level 01</td>
+                <td>대표이사</td>
+                <td>ROOT</td>
+                <td>2021.11.21</td>
+                <td><a class="del t-btn">삭제</a></td>
+                <td>
+                  <a class="view t-btn">수정하기</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>Level 01</td>
+                <td>대표이사</td>
+                <td>ROOT</td>
+                <td>2021.11.21</td>
+                <td><a class="del t-btn">삭제</a></td>
+                <td>
+                  <a class="view t-btn">수정하기</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                  </label>
+                </td>
+                <td>Level 01</td>
+                <td>대표이사</td>
+                <td>ROOT</td>
+                <td>2021.11.21</td>
+                <td><a class="del t-btn">삭제</a></td>
+                <td>
+                  <a class="view t-btn">수정하기</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </article>
+        <article class="detail-view">
+          <div class="detail-info">
+            <div class="top-cell">
+              <p class="co-name">[업데이트 소식 및 드리는글] 컨텐츠 DRM 보안 기술 도입</p>
+              <div class="btns">
+                <a class="del-btn t-btn">삭제하기</a>
+              </div>
+            </div>
+            <div class="table-wrap table-result">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <colgroup>
+                  <col width="160">
+                  <col width="1237">
+                </colgroup>
+                <tr>
+                  <td>ID</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td>비밀번호</td>
+                  <td><input type="password"></td>
+                </tr>
+                <tr>
+                  <td>비밀번호 확인</td>
+                  <td><input type="password"></td>
+                </tr>
+                <tr>
+                  <td class="vt">클릭시 타겟</td>
+                  <td>
+                    <label>
+                      <input type="radio" name="target">
+                      <i></i>
+                      <s>ROOT</s>
+                    </label>
+                    <label>
+                      <input type="radio" name="target">
+                      <i></i>
+                      <s>ADMIN</s>
+                    </label>
+                    <p class="noti">ROOT일 경우 아래 접근권한 설정에 관계없이 모든 메뉴 접근이 가능합니다.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>이름</td>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <td class="vt">접근권한</td>
+                  <td>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>회원관리</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>상담신청 관리</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>프로젝트 관리</s>
+                    </label>
+                    <br>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>문의하기</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>유지보수 신청 관리</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>상담신청 폼 관리하기</s>
+                    </label>
+                    <br>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>약관 수정하기</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>구독서비스 관리하기</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>포트폴리오 관리하기</s>
+                    </label>
+                    <br>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>FAQ 관리하기</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>공지사항 관리하기</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>푸터 관리하기</s>
+                    </label>
+                    <br>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>팝업 관리하기</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>기본정보 관리</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>관리자 권한 관리</s>
+                    </label>
+                    <br>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>매출현황 보기</s>
+                    </label>
+                    <label>
+                      <input type="checkbox">
+                      <i></i>
+                      <s>접속 경로 보기</s>
+                    </label>
+                  </td>
+                </tr>
+              </table>
+              <a class="save t-btn">저장하기</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+  <div class="popup">
+    <div class="dim"></div>
+    <div class="inner">
+      <p class="tit">삭제하시겠습니까?</p>
+      <div class="btns">
+        <a class="del t-btn">삭제하기</a>
+        <a class="cancel t-btn">취소하기</a>
+      </div>
+    </div>
+  </div>
+  <script src="/js/polyfill.js"></script>
+  <script src="/js/aside.js"></script>
+  <script src="/js/admin.js"></script>
+  <script>
+    let inputFile = document.querySelectorAll('.input-file');
+    let upLoadNm = document.querySelectorAll('.upload-name');
+    Array.prototype.forEach.call(inputFile, function(e,idx) {
+      $(e).on('change',function(){
+        var fileName = $(e).val();
+        nmPrint(fileName,idx);
+      });
+      function nmPrint(v,idx) {
+        $(upLoadNm[idx]).val(v);
+      }
+    })
+  </script>
+</body>
+</html>

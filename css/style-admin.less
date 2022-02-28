@@ -353,19 +353,12 @@ img { backface-visibility: hidden; image-rendering: auto; .ib; }
           &.edit-sec {
             .detail-view {
               .top-cell .btns {
-                .edit, .prj { .hide; }
+                .edit, .prj, .del { .hide; }
                 .save { .ib; }
               }
               .table-result { .hide; }
               .table-edit { .ib; }
             }
-          }
-        }
-      }
-      &.admin3 {
-        &.detail .detail-view .detail-info {
-          .top-cell .btns {
-            .prj { .ib; }
           }
         }
       }
@@ -396,13 +389,14 @@ img { backface-visibility: hidden; image-rendering: auto; .ib; }
                     .bar-txt:after { content:'100%'; }
                   }
                 }
-                a { .fs(15); .lh(18); .wh(116,32); .lh(32); .-a(#dadada); .-box; .br(16); .tc; .mt(28); .fr;
-                  &.work-complete { .bgc(#F5F5F5); }
+                a { .fs(15); .lh(18); .wh(116,32); .lh(32); .-a(#dadada); .-box; .br(16); .tc; .mt(28);
+                  &.work-complete { .bgc(#F5F5F5); .mb(50); }
                 }
               }
+              .table-edit { .hide; }
               &.open {
                 .top-cell .view-switch { .contain('../images/admin/ico-drop-up.svg'); }
-                .table-wrap { .ib; }
+                .table-result { .ib; }
               }
             }
             &.working-view .detail-info .table-wrap { .clear;
@@ -411,7 +405,7 @@ img { backface-visibility: hidden; image-rendering: auto; .ib; }
             &.work-start-view .detail-info .table-wrap {
               table tr { .-b;
                 td {
-                  p { .ib; .vam; .mb(10); }
+                  p { .mb(10); }
                   input { .mb(10); }
                 }
               }
@@ -420,6 +414,14 @@ img { backface-visibility: hidden; image-rendering: auto; .ib; }
           .detailed.open ~ .detailed-table { .ib; }
           .detailed-table { .w(1461); .bgc(#FBFBFB); .m(12); .rel; .hide;
             .detail-info .table-wrap { .ib; .-t; .pb(0); }
+          }
+        }
+        &.edit-sec {
+          .detail-view .detail-info {
+            &.open {
+              .table-result { .hide; }
+            }
+            .table-edit { .ib; }
           }
         }
       }

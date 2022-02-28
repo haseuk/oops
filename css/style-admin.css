@@ -1221,7 +1221,8 @@ img {
   display: none;
 }
 .container .wrap section.admin2.detail.edit-sec .detail-view .top-cell .btns .edit,
-.container .wrap section.admin2.detail.edit-sec .detail-view .top-cell .btns .prj {
+.container .wrap section.admin2.detail.edit-sec .detail-view .top-cell .btns .prj,
+.container .wrap section.admin2.detail.edit-sec .detail-view .top-cell .btns .del {
   display: none;
 }
 .container .wrap section.admin2.detail.edit-sec .detail-view .top-cell .btns .save {
@@ -1231,9 +1232,6 @@ img {
   display: none;
 }
 .container .wrap section.admin2.detail.edit-sec .detail-view .table-edit {
-  display: inline-block;
-}
-.container .wrap section.admin3.detail .detail-view .detail-info .top-cell .btns .prj {
   display: inline-block;
 }
 .container .wrap section.admin4.detail .detail-view .detail-info .top-cell {
@@ -1327,17 +1325,20 @@ img {
   border-radius: 0.88888889rem;
   text-align: center;
   margin-top: 1.55555556rem;
-  float: right;
 }
 .container .wrap section.admin4.detail .detail-view .detail-info .table-result a.work-complete {
   background-color: #F5F5F5;
+  margin-bottom: 2.77777778rem;
+}
+.container .wrap section.admin4.detail .detail-view .detail-info .table-edit {
+  display: none;
 }
 .container .wrap section.admin4.detail .detail-view .detail-info.open .top-cell .view-switch {
   background-repeat: no-repeat;
   background-image: url('../images/admin/ico-drop-up.svg');
   background-size: contain;
 }
-.container .wrap section.admin4.detail .detail-view .detail-info.open .table-wrap {
+.container .wrap section.admin4.detail .detail-view .detail-info.open .table-result {
   display: inline-block;
 }
 .container .wrap section.admin4.detail .detail-view.working-view .detail-info .table-wrap {
@@ -1358,8 +1359,6 @@ img {
   border-bottom: 0;
 }
 .container .wrap section.admin4.detail .detail-view.work-start-view .detail-info .table-wrap table tr td p {
-  display: inline-block;
-  vertical-align: middle;
   margin-bottom: 0.55555556rem;
 }
 .container .wrap section.admin4.detail .detail-view.work-start-view .detail-info .table-wrap table tr td input {
@@ -1379,6 +1378,12 @@ img {
   display: inline-block;
   border-top: 0;
   padding-bottom: 0rem;
+}
+.container .wrap section.admin4.edit-sec .detail-view .detail-info.open .table-result {
+  display: none;
+}
+.container .wrap section.admin4.edit-sec .detail-view .detail-info .table-edit {
+  display: inline-block;
 }
 .container .wrap section.admin5.detail .detail-view .detail-info .table-wrap table tr td .img {
   width: 10.77777778rem;

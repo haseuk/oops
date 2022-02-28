@@ -15,7 +15,7 @@
   <div class="container">
     <div class="wrap">
       <aside data-include="../include/admin/aside.html"></aside>
-      <section class="admin2 admin10 admin11">
+      <section class="admin2 admin10 admin11 admin12">
         <article class="search-art">
           <div class="search-exel">
             <div class="input">
@@ -26,27 +26,20 @@
           </div>
         </article>
         <article class="all-table">
-          <h4>공지사항 갯수 <s>1건</s></h4>
+          <h4>전체 팝업 수 <s>1건</s></h4>
           <div class="btns">
             <a class="list-align"><img src="../images/admin/ico-ham.svg" alt=""> 정렬</a>
-            <a class="filter-btn"><img src="../images/admin/ico-filter.svg" alt=""> 필터추가</a>
-            <div class="filter-wrap">
-              <div class="filter-box">
-                <p>필터를 추가해주세요.</p>
-              </div>
-              <div class="add">
-                <a><img src="../images/admin/ico-add.svg" alt=""> 필터추가</a>
-              </div>
-            </div>
+            <a class="addition-btn">추가하기</a>
           </div>
           <div class="table">
             <table cellspacing="0" cellpadding="0" border="0">
               <colgroup>
                 <col width="45">
-                <col width="698">
-                <col width="218">
-                <col width="218">
-                <col width="218">
+                <col width="300">
+                <col width="263">
+                <col width="263">
+                <col width="263">
+                <col width="263">
               </colgroup>
               <tr>
                 <th>
@@ -56,9 +49,10 @@
                   </label>
                 </th>
                 <th>제목</th>
-                <th>등록일자</th>
-                <th>FAQ 삭제</th>
-                <th>수정하기</th>
+                <th>팝업 시작일</th>
+                <th>팝업 종료일</th>
+                <th>생성일</th>
+                <th>미리보기</th>
               </tr>
               <tr>
                 <td>
@@ -67,15 +61,13 @@
                     <i></i>
                   </label>
                 </td>
-                <td>[서비스 장애 발생 공지] 🚨 2022년 1월 3일, 4일 서비스 오류</td>
+                <td>이벤트 팝업</td>
+                <td>2021.11.21</td>
+                <td>2021.11.21</td>
                 <td>2021.11.21</td>
                 <td>
-                  <a class="del t-btn">삭제</a>
+                  <a class="pre-view-btn t-btn">미리보기</a>
                 </td>
-                <td>
-                  <a class="view t-btn">수정하기</a>
-                </td>
-                <td></td>
               </tr>
               <tr>
                 <td>
@@ -84,15 +76,13 @@
                     <i></i>
                   </label>
                 </td>
-                <td>[업데이트 소식 및 드리는글] 컨텐츠 DRM 보안 기술 도입</td>
+                <td>이벤트 팝업</td>
+                <td>2021.11.21</td>
+                <td>2021.11.21</td>
                 <td>2021.11.21</td>
                 <td>
-                  <a class="del t-btn">삭제</a>
+                  <a class="pre-view-btn t-btn">미리보기</a>
                 </td>
-                <td>
-                  <a class="view t-btn">수정하기</a>
-                </td>
-                <td></td>
               </tr>
               <tr>
                 <td>
@@ -101,44 +91,19 @@
                     <i></i>
                   </label>
                 </td>
-                <td>[공지] 개인정보 취급방침 개정 안내</td>
+                <td>이벤트 팝업</td>
+                <td>2021.11.21</td>
+                <td>2021.11.21</td>
                 <td>2021.11.21</td>
                 <td>
-                  <a class="del t-btn">삭제</a>
+                  <a class="pre-view-btn t-btn">미리보기</a>
                 </td>
-                <td>
-                  <a class="view t-btn">수정하기</a>
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>
-                  <label>
-                    <input type="checkbox">
-                    <i></i>
-                  </label>
-                </td>
-                <td>[업데이트 소식] 3월 1주차 - 묻고 답하기 리뉴얼 💬</td>
-                <td>2021.11.21</td>
-                <td>
-                  <a class="del t-btn">삭제</a>
-                </td>
-                <td>
-                  <a class="view t-btn">수정하기</a>
-                </td>
-                <td></td>
               </tr>
             </table>
           </div>
         </article>
         <article class="detail-view">
           <div class="detail-info">
-            <div class="top-cell">
-              <p class="co-name">[업데이트 소식 및 드리는글] 컨텐츠 DRM 보안 기술 도입</p>
-              <div class="btns">
-                <a class="del-btn t-btn">삭제하기</a>
-              </div>
-            </div>
             <div class="table-wrap table-result">
               <table cellpadding="0" cellspacing="0" border="0">
                 <colgroup>
@@ -146,21 +111,53 @@
                   <col width="1237">
                 </colgroup>
                 <tr>
-                  <td>문의 내용</td>
+                  <td>제목</td>
+                  <td><input type="text" placeholder="제목을 입력하세요"></td>
+                </tr>
+                <tr>
+                  <td>시작일</td>
+                  <td><input type="text" placeholder="팝업 시작일"></td>
+                </tr>
+                <tr>
+                  <td>종료일</td>
+                  <td><input type="text" placeholder="팝업 종료일"></td>
+                </tr>
+                <tr>
+                  <td>사진 업로드</td>
                   <td>
-                    <textarea>OOPS 서비스 신청은 어떻게 하나요?</textarea>
+                    <div class="file-box">
+                      <input class="upload-name">
+                      <div class="label">
+                        <label>
+                          <input type="file" class="input-file">
+                          <s><img src="../images/admin/ico-add-gray.svg" alt="">업로드</s>
+                        </label>
+                      </div>
+                    </div>
                   </td>
                 </tr>
                 <tr>
-                  <td>답변</td>
+                  <td>클릭시 링크</td>
+                  <td><input type="text" placeholder="클릭 시 이동할 링크를 입력하세요"></td>
+                </tr>
+                <tr>
+                  <td>클릭시 타겟</td>
                   <td>
-                    <textarea>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed dui ac nibh aliquet maximus et quis arcu.
-Suspendisse potenti. Suspendisse potenti. Integer vel aliquet magna, non pretium felis.
-Proin nec eros id justo dapibus ullamcorper nec quis mi. Morbi aliquam lorem est, vel accumsan enim vestibulum eu.
-Nulla molestie ante ut leo condimentum scelerisque.
-                    </textarea>
+                    <label>
+                      <input type="radio" name="target">
+                      <i></i>
+                      <s>부모창</s>
+                    </label>
+                    <label>
+                      <input type="radio" name="target">
+                      <i></i>
+                      <s>새창</s>
+                    </label>
                   </td>
+                </tr>
+                <tr>
+                  <td>등록일</td>
+                  <td>2022-01-11</td>
                 </tr>
               </table>
               <a class="save t-btn">저장하기</a>
@@ -183,5 +180,18 @@ Nulla molestie ante ut leo condimentum scelerisque.
   <script src="/js/polyfill.js"></script>
   <script src="/js/aside.js"></script>
   <script src="/js/admin.js"></script>
+  <script>
+    let inputFile = document.querySelectorAll('.input-file');
+    let upLoadNm = document.querySelectorAll('.upload-name');
+    Array.prototype.forEach.call(inputFile, function(e,idx) {
+      $(e).on('change',function(){
+        var fileName = $(e).val();
+        nmPrint(fileName,idx);
+      });
+      function nmPrint(v,idx) {
+        $(upLoadNm[idx]).val(v);
+      }
+    })
+  </script>
 </body>
 </html>
