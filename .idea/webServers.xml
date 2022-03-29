@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="e8600515-9b24-4fee-8078-7843b3cd1637" name="oops" url="http://oops.devcraft.kr">
-        <fileTransfer rootFolder="/var/www/oops" accessType="SFTP" host="devcraft.kr" port="22" sshConfigId="4d86c2ba-2653-46e2-8de4-7f96ed211d3e" sshConfig="root@devcraft.kr:22 password">
+        <fileTransfer rootFolder="/var/www/oops" accessType="SFTP" host="devcraft.kr" port="22" sshConfigId="87da5170-b709-4742-bedd-b63ef6043f13" sshConfig="root@devcraft.kr:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

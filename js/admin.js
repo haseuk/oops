@@ -218,4 +218,39 @@ function selectAll(v) {
 let deleteBtn = document.querySelector('.del-btn');
 if(deleteBtn)deleteBtn.addEventListener('click', function() {
   popupOpen();
+});
+
+
+// 3.28 추가 -->
+let viewSwitchBtn1 = document.querySelectorAll('.view-switch1');
+Array.prototype.forEach.call(viewSwitchBtn1, function(e) {
+  e.addEventListener('click', function() {
+    if(e.parentNode.parentNode.classList.contains('cell-on')) {
+      e.parentNode.parentNode.classList.remove('cell-on')
+      e.parentNode.parentNode.classList.remove('table-on')
+    } else {
+      e.parentNode.parentNode.classList.add('cell-on')
+    }
+  })
+});
+let editBtn = document.querySelectorAll('.f-edit .edit-btn');
+Array.prototype.forEach.call(editBtn, function(e) {
+  e.addEventListener('click', function() {
+    if(e.parentNode.parentNode.parentNode.classList.contains('table-on')) {
+      e.parentNode.parentNode.parentNode.classList.remove('table-on')
+    } else {
+      e.parentNode.parentNode.parentNode.classList.add('table-on')
+    }
+  });
+});
+let fSaveBtn = document.querySelectorAll('.f-edit .save');
+Array.prototype.forEach.call(fSaveBtn, function(e) {
+  e.addEventListener('click', function() {
+    if(e.parentNode.parentNode.classList.contains('save-on')) {
+      e.parentNode.parentNode.classList.remove('save-on')
+    } else {
+      e.parentNode.parentNode.classList.add('save-on')
+    }
+  })
 })
+// 3.28 추가 끝-->

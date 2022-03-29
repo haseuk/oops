@@ -665,6 +665,9 @@
     position: relative;
     cursor: pointer;
   }
+  .container .wrap section article .questionnaire ul li .cont-wrap .cont label input[type=radio]:checked + i {
+    border: 1px solid #FFB50F;
+  }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont label input[type=radio]:checked + i:after {
     content: '';
     display: block;
@@ -724,6 +727,15 @@
     color: #888;
     width: 11.27777778rem;
   }
+  .container .wrap section article .questionnaire ul li .cont-wrap .cont label.etc {
+    width: auto!important;
+    margin-bottom: 1.11111111rem !important;
+    margin-right: 0rem !important;
+  }
+  .container .wrap section article .questionnaire ul li .cont-wrap .cont label.etc + input {
+    margin-bottom: 1.11111111rem !important;
+    margin-right: 0rem;
+  }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .later input[type=checkbox] + i {
     width: 0.88888889rem;
     height: 0.88888889rem;
@@ -746,7 +758,7 @@
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .later s {
     font-size: 0.66666667rem;
-    color: #767676;
+    color: #999;
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .etc {
     display: inline-block;
@@ -755,7 +767,7 @@
     width: auto;
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .etc + input[type=text] {
-    width: 11.11111111rem;
+    width: 13.88888889rem;
     height: 1.11111111rem;
     line-height: 1.11111111rem;
     border: 0;
@@ -764,10 +776,16 @@
     display: inline-block;
     vertical-align: middle;
     background: transparent;
+    padding-left: 0rem;
+    margin-left: 0.55555556rem;
+  }
+  .container .wrap section article .questionnaire ul li .cont-wrap .cont ::placeholder {
+    font-size: 0.72222222rem;
+    color: #aaa;
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .input-wrap {
     margin-bottom: 1.11111111rem;
-    height: 1.66666667rem;
+    height: auto;
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .input-wrap label {
     display: inline-block;
@@ -775,8 +793,6 @@
     margin-bottom: 0rem;
     margin-top: 0rem;
     width: 10rem;
-    height: 1.66666667rem;
-    line-height: 1.66666667rem;
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .input-wrap label input[type=checkbox] + i,
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .input-wrap label input[type=checkbox] + s {
@@ -930,6 +946,23 @@
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont .input-date input {
     width: 100%;
+  }
+  .container .wrap section article .questionnaire ul li .cont-wrap .cont .depth {
+    padding-left: 1.55555556rem;
+    box-sizing: border-box;
+    margin-bottom: 1.33333333rem;
+    display: none;
+  }
+  .container .wrap section article .questionnaire ul li .cont-wrap .cont .depth p {
+    font-size: 0.72222222rem;
+    width: auto;
+    font-weight: 600;
+    color: #555;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 0rem;
+    padding-left: 0rem;
+    margin-bottom: 0.83333333rem;
   }
   .container .wrap section article .questionnaire ul li .cont-wrap .cont2 > div {
     padding-left: 9.61111111rem;
@@ -1133,6 +1166,45 @@
   .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont4 p {
     margin-bottom: 2.22222222rem;
   }
+  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont4 textarea {
+    width: 29.72222222rem;
+    height: 9.72222222rem;
+    margin-left: 1.11111111rem;
+  }
+  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont4 .file-wrap p {
+    font-size: 0.83333333rem;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 1.94444444rem;
+    margin-right: 2.33333333rem;
+    vertical-align: middle;
+    margin-bottom: 0rem;
+  }
+  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont4 .file-wrap .file-box {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont4 .file-wrap .file-box .upload-name {
+    width: 18.11111111rem;
+    height: 1.94444444rem;
+    margin-right: 0.55555556rem;
+    margin-bottom: 0rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont4 .file-wrap .file-box .del-btn {
+    right: 6.94444444rem;
+    top: 0.66666667rem;
+    left: auto;
+    bottom: auto;
+  }
+  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont4 .file-wrap .file-box label {
+    width: 5.83333333rem;
+    height: 1.94444444rem;
+    border: 1px solid #D9D9D9;
+    display: inline-block;
+    vertical-align: middle;
+  }
   .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont.cont7 .ap {
     margin-bottom: 0rem;
   }
@@ -1154,9 +1226,6 @@
   }
   .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont8 label.etc + input {
     margin-left: 0rem;
-  }
-  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont8 label:nth-of-type(7) {
-    margin-bottom: 0rem;
   }
   .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont11 {
     padding-left: 1.11111111rem;
@@ -1255,6 +1324,18 @@
     background-image: url('/images/front/pc/bord9.png');
     background-size: contain;
   }
+  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont13 p {
+    width: auto;
+    display: block;
+    margin-bottom: 0.83333333rem;
+  }
+  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont13 input {
+    margin-left: 1.11111111rem;
+  }
+  .container .wrap section article .questionnaire ul li.list3 .cont-wrap .cont13 .later {
+    margin-top: 0.66666667rem;
+    margin-left: 1.11111111rem;
+  }
   .container .wrap section article .questionnaire ul li.list4 .cont-wrap .cont p.sub1 {
     margin-bottom: 1.66666667rem !important;
   }
@@ -1263,6 +1344,11 @@
   }
   .container .wrap section article .questionnaire ul li.list5 .cont-wrap .cont .etc + input {
     margin-bottom: 1.11111111rem;
+  }
+  .container .wrap section article .questionnaire ul li.list5 .cont-wrap .cont .input-wrap {
+    height: 1.66666667rem;
+    line-height: 1.66666667rem;
+    margin-bottom: 0.66666667rem;
   }
   .container .wrap section article .questionnaire ul li.list6 .cont-wrap .cont p.sub1 {
     margin-bottom: 1.66666667rem !important;
@@ -1285,9 +1371,27 @@
   .container .wrap section article .questionnaire ul li.list6 .cont-wrap .cont-a .p {
     margin-top: 2.77777778rem;
   }
+  .container .wrap section article .questionnaire ul li.list6 .cont-wrap .cont10 .sub1 {
+    width: auto;
+    display: block;
+  }
+  .container .wrap section article .questionnaire ul li.list6 .cont-wrap .cont10 label {
+    width: 14.66666667rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .container .wrap section article .questionnaire ul li.list6 .cont-wrap .cont10 label:nth-child(even) {
+    margin-left: 1.11111111rem;
+  }
+  .container .wrap section article .questionnaire ul li.list6 .cont-wrap .cont10 .later {
+    margin-left: 1.11111111rem;
+  }
   .container .wrap section article .questionnaire ul li.list7 .cont-wrap .cont p.sub1 {
     margin-bottom: 1.33333333rem !important;
     width: auto;
+  }
+  .container .wrap section article .questionnaire ul li.list7 .cont-wrap .cont .input-date + .later {
+    margin-left: 1.11111111rem;
   }
   .container .wrap section article .questionnaire ul li.list7 .cont-wrap .cont4 p {
     display: block;
@@ -1511,6 +1615,10 @@
   }
   .container .wrap section article .questionnaire ul li.open .cont-wrap {
     display: block;
+  }
+  .container .wrap section article .questionnaire ul li .cont-wrap .cont.cont10 > div label:nth-child(odd) {
+    width: 15.55555556rem;
+    margin-right: 0rem;
   }
   .container .wrap.main section article {
     text-align: left;
@@ -2054,7 +2162,15 @@
     padding-bottom: 4.44444444rem;
     padding-left: 0rem;
   }
-  .container .wrap.main section article.arti5:after {
+  .container .wrap.main section article.arti5.step {
+    padding-top: 4.44444444rem;
+    padding-right: 0rem;
+    padding-bottom: 4.77777778rem;
+    padding-left: 0rem;
+    background-color: #07364A;
+    position: relative;
+  }
+  .container .wrap.main section article.arti5.step:after {
     content: '';
     display: block;
     width: 100vw;
@@ -2067,26 +2183,22 @@
     margin-left: -50vw;
     background-color: #07364A;
   }
-  .container .wrap.main section article.arti5 h2,
-  .container .wrap.main section article.arti5 ul,
-  .container .wrap.main section article.arti5 a {
-    position: relative;
+  .container .wrap.main section article.arti5.step h2 {
+    margin-bottom: 2.72222222rem;
+  }
+  .container .wrap.main section article.arti5.step ul {
+    margin-bottom: 2.22222222rem;
     z-index: 1;
+    position: relative;
   }
-  .container .wrap.main section article.arti5 h2 {
-    margin-bottom: 2.77777778rem;
-  }
-  .container .wrap.main section article.arti5 ul {
-    margin-bottom: 3.55555556rem;
-  }
-  .container .wrap.main section article.arti5 ul li {
+  .container .wrap.main section article.arti5.step ul li {
     display: inline-block;
     vertical-align: top;
     padding-bottom: 0rem;
     margin-bottom: 0rem;
     margin-right: 3.22222222rem;
   }
-  .container .wrap.main section article.arti5 ul li:after {
+  .container .wrap.main section article.arti5.step ul li:after {
     width: 0.61111111rem;
     height: 1.16666667rem;
     background-repeat: no-repeat;
@@ -2098,45 +2210,51 @@
     left: auto;
     bottom: auto;
   }
-  .container .wrap.main section article.arti5 ul li:last-child {
+  .container .wrap.main section article.arti5.step ul li:last-child {
     margin-right: 0rem;
   }
-  .container .wrap.main section article.arti5 ul li .img {
+  .container .wrap.main section article.arti5.step ul li .img {
     width: 8.33333333rem;
     height: 8.33333333rem;
     margin-bottom: 0.83333333rem;
   }
-  .container .wrap.main section article.arti5 ul li .img span {
+  .container .wrap.main section article.arti5.step ul li .img span {
     font-size: 0.72222222rem;
     line-height: 1.33333333rem;
     margin-top: 0.83333333rem;
   }
-  .container .wrap.main section article.arti5 ul li .img .tit {
+  .container .wrap.main section article.arti5.step ul li .img .tit {
     font-size: 1rem;
     line-height: 1.33333333rem;
     width: 8.33333333rem;
     margin-left: -4.16666667rem;
     margin-bottom: 0rem;
+    margin-top: 0rem;
   }
-  .container .wrap.main section article.arti5 ul li .txt {
+  .container .wrap.main section article.arti5.step ul li .txt {
     font-size: 0.77777778rem;
     line-height: 1.05555556rem;
   }
-  .container .wrap.main section article.arti5 ul li:nth-child(2) .tit,
-  .container .wrap.main section article.arti5 ul li:nth-child(5) .tit {
+  .container .wrap.main section article.arti5.step ul li:nth-child(3) .tit {
     margin-top: 0.27777778rem;
   }
-  .container .wrap.main section article.arti5 .intro {
+  .container .wrap.main section article.arti5.step .intro {
     font-size: 0.88888889rem;
     width: 11.66666667rem;
     height: 2.77777778rem;
     line-height: 2.77777778rem;
     box-sizing: border-box;
     border: 2px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-top: 0rem;
   }
-  .container .wrap.main section article.arti5 .intro:hover {
+  .container .wrap.main section article.arti5.step .intro:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     background-color: #FFB50F;
     border: 1px solid #FFB50F;
+    color: #fff;
   }
   .container .wrap.main section article.arti6 {
     padding-top: 6.66666667rem;
@@ -2220,7 +2338,7 @@
     line-height: 2.44444444rem;
   }
   .container .wrap.main section article.arti7 h2 img {
-    width: 13.88888889rem;
+    width: 13.72222222rem;
     height: 1.94444444rem;
     margin-top: 0.88888889rem;
     display: block;
@@ -3143,7 +3261,7 @@
   .container .wrap.page5 section article.step {
     padding-top: 4.44444444rem;
     padding-right: 0rem;
-    padding-bottom: 4.44444444rem;
+    padding-bottom: 4.77777778rem;
     padding-left: 0rem;
     background-color: #07364A;
     position: relative;
@@ -3162,10 +3280,10 @@
     background-color: #07364A;
   }
   .container .wrap.page5 section article.step h2 {
-    margin-bottom: 2.77777778rem;
+    margin-bottom: 2.72222222rem;
   }
   .container .wrap.page5 section article.step ul {
-    margin-bottom: 3.55555556rem;
+    margin-bottom: 2.22222222rem;
     z-index: 1;
     position: relative;
   }
@@ -3207,13 +3325,13 @@
     width: 8.33333333rem;
     margin-left: -4.16666667rem;
     margin-bottom: 0rem;
+    margin-top: 0rem;
   }
   .container .wrap.page5 section article.step ul li .txt {
     font-size: 0.77777778rem;
     line-height: 1.05555556rem;
   }
-  .container .wrap.page5 section article.step ul li:nth-child(2) .tit,
-  .container .wrap.page5 section article.step ul li:nth-child(5) .tit {
+  .container .wrap.page5 section article.step ul li:nth-child(3) .tit {
     margin-top: 0.27777778rem;
   }
   .container .wrap.page5 section article.step .intro {
@@ -3221,6 +3339,7 @@
     color: #fff;
     position: relative;
     z-index: 1;
+    margin-top: 0rem;
   }
   .container .wrap.page5 section article.step .intro:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -3802,6 +3921,12 @@
     background-image: url('/images/front/mo/pop-right.svg');
     background-size: contain;
   }
+  .container .wrap.page8 header.login ~ section .arti1 ul {
+    display: none;
+  }
+  .container .wrap.page8 header.login ~ section .arti1 .inquiry {
+    display: block;
+  }
   .container .wrap.page8 section article.arti1 {
     padding-top: 4.44444444rem;
     padding-right: 0rem;
@@ -3842,6 +3967,51 @@
     padding-left: 0.88888889rem;
     border-radius: 0.22222222rem;
     vertical-align: middle;
+  }
+  .container .wrap.page8 section article.arti1 .inquiry {
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+    padding-top: 2.22222222rem;
+    padding-right: 1.11111111rem;
+    padding-bottom: 2.22222222rem;
+    padding-left: 1.11111111rem;
+    box-sizing: border-box;
+    text-align: left;
+    zoom: 1;
+    display: none;
+  }
+  .container .wrap.page8 section article.arti1 .inquiry:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .container .wrap.page8 section article.arti1 .inquiry p {
+    font-size: 0.83333333rem;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .container .wrap.page8 section article.arti1 .inquiry textarea {
+    font-size: 0.77777778rem;
+    font-family: Pretendard, sans-serif;
+    color: #AAA;
+    width: 29.44444444rem;
+    height: 9.72222222rem;
+    padding-top: 0.5rem;
+    padding-right: 0.88888889rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.88888889rem;
+    box-sizing: border-box;
+    vertical-align: top;
+    float: right;
+    border: 1px solid #D9D9D9;
+    border-radius: 0.22222222rem;
   }
   .container .wrap.page8 section article.arti1 .agree {
     text-align: left;

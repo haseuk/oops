@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>OOPS</title>
+  <title>Oops 웁스</title>
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/style-front-m.css">
   <link rel="stylesheet" href="/css/style-front-pc.css">
@@ -13,8 +13,13 @@
 <body>
   <div class="container">
     <div class="wrap page8">
+
+      <!-- 3.28추간 로그인 되면 문의 내용 노출 됨
+            header에 login시 arti1에 ul 닫히고 inquiry 노출
+            header에 logout시 arti1에 ul 노출 inquiry 닫힘
+      -->
+
       <!--#####header tag에 login 클래스면 로그인 되어있는 상태-->
-      <!--#####header tag에 loout 클래스면 로그아웃 되어있는 상태-->
       <header data-include="../include/front/header.html" class="y-header"></header>
       <section>
         <article class="top1">
@@ -44,6 +49,16 @@
               <input type="text" placeholder="문의내용을 알려주세요">
             </li>
           </ul>
+
+
+          <!-- 3.28 추가 -->
+          <div class="inquiry">
+            <p>문의 내용</p>
+            <textarea></textarea>
+          </div>
+          <!-- 3.28 추가 끝-->
+
+
           <div class="agree">
             <p class="tit">개인정보 이용 동의</p>
             <div class="a-box">

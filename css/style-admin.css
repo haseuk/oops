@@ -601,6 +601,9 @@ img {
   word-wrap: break-word;
   line-height: 1.2em;
 }
+.container .wrap section.admin2 article.all-table .table table tr td:nth-child(2) .view {
+  cursor: pointer;
+}
 .container .wrap section.admin2.detail .search-art .search-exel {
   zoom: 1;
   margin-bottom: 0.66666667rem;
@@ -733,6 +736,22 @@ img {
   position: relative;
   border: 1px solid #DEDEDE;
   overflow: hidden;
+}
+.container .wrap section.admin2.detail .detail-view .detail-info .table-wrap table tr td .img .img-down {
+  width: 0.77777778rem;
+  height: 0.77777778rem;
+  background-repeat: no-repeat;
+  background-image: url('../images/admin/img-down.svg');
+  background-size: contain;
+  position: absolute;
+  right: 0.38888889rem;
+  bottom: 0.38888889rem;
+  left: auto;
+  top: auto;
+  display: inline-block;
+  z-index: 2;
+  margin-bottom: 0rem;
+  cursor: pointer;
 }
 .container .wrap section.admin2.detail .detail-view .detail-info .table-wrap table tr td .img:after {
   content: '';
@@ -1251,7 +1270,8 @@ img {
   line-height: 1.83333333rem;
   display: inline-block;
 }
-.container .wrap section.admin4.detail .detail-view .detail-info .top-cell .view-switch {
+.container .wrap section.admin4.detail .detail-view .detail-info .top-cell .view-switch,
+.container .wrap section.admin4.detail .detail-view .detail-info .top-cell .view-switch1 {
   width: 1.33333333rem;
   height: 1.33333333rem;
   float: right;
@@ -1991,6 +2011,74 @@ img {
 }
 .container .wrap section.admin12 .detail-view .detail-info .table-result .save {
   margin-right: 0rem;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info .top-cell {
+  padding-top: 0.83333333rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 0rem;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info .top-cell p {
+  margin-left: 1.77777778rem;
+  margin-bottom: 0.83333333rem;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info .top-cell .view-switch1 {
+  margin-right: 1.77777778rem;
+  margin-bottom: 1.11111111rem;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info .top-cell .edit-wrap {
+  display: none;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on .top-cell .view-switch1 {
+  background-repeat: no-repeat;
+  background-image: url('../images/admin/ico-drop-up.svg');
+  background-size: contain;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on .top-cell .edit-wrap {
+  border-top: 1px solid #DADADA;
+  height: 3.33333333rem;
+  text-align: right;
+  display: block;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on .top-cell .edit-wrap .edit-btn {
+  font-size: 0.83333333rem;
+  text-align: center;
+  width: 5.27777778rem;
+  height: 1.77777778rem;
+  color: #191919;
+  line-height: 1.77777778rem;
+  border-radius: 0.88888889rem;
+  margin-top: 0.77777778rem;
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+  border: 1px solid #DADADA;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on.table-on .top-cell .edit-wrap {
+  display: none;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on.table-on .table-wrap {
+  display: block;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on.table-on .table-wrap textarea {
+  height: 23.11111111rem;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on.table-on .table-wrap .save {
+  margin-top: 0.88888889rem;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on.table-on .table-wrap .save:after {
+  content: '저장하기';
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on.save-on .table-wrap textarea {
+  background-color: #FBFBFB;
+  border: 1px solid #FBFBFB;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on.save-on .table-wrap .save {
+  margin-top: 0.88888889rem;
+  background-color: #FBFBFB;
+}
+.container .wrap section.admin4.f-edit .detail-view .detail-info.cell-on.save-on .table-wrap .save:after {
+  content: '수정하기';
 }
 .popup {
   position: fixed;

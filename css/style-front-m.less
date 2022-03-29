@@ -33,7 +33,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
         .ham { .wh(40,50); .ib; .abs; .lt; z-index: 1;
           &:after { .cnt; .wh(20,14); .abs; .lt(20,18); .contain('/images/front/mo/ico-ham-b.svg'); pointer-events: none; }
         }
-        .logo { .wh(84,27); .abs; .lt(50%,12); .ml(-42); .contain('/images/front/mo/logo-b.svg'); }
+        .logo { .wh(87,28); .abs; .lt(50%,12); .ml(-43); .contain('/images/front/mo/logo-b.svg'); }
         .logged { .fs(13); .semi-bold; .wh(60,24); .lh(24); .-a(#555); .br(12); .tc; .ib; .fr; .-box; }
         .logout, .member, .bell, .menu-list, .my-page { .hide; .fr; }
       }
@@ -43,7 +43,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
         .dim { .bgc(#000); opacity: 0; .wh(100vw,100%); .fix; .lt; pointer-events: none; }
         .menu-inner { .wh(300,100%); .abs; .lt; .bgc(#fff);
           .top { .bgc(#FFB50F); .h(177); .p(28,20,18); .-box;
-            h1 { .wh(83,23); .mb(22);
+            h1 { .wh(100,32); .mb(22);
               img { .f; }
             }
             p { .fs(13); .lh(17); .tl; color:#fff; .mb(13);
@@ -171,7 +171,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
           h2 { color:#fff; .mb(10); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08); .tc; }
           p { .fs(15); .lh(20); color:#fff; .bold; .tc; }
         }
-        p { .fs(14); .lh(20); }
+        p { .fs(14); .lh(25); }
         &.step { .bgc(#FBFBFB); .pb(50);
           h2 { .mb(55); }
           ul {
@@ -218,17 +218,18 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
               .cont-wrap { .p(0,8); .-box; .hide;
                 .cont { .p(15,0,10); .-box; .-b(#DADADA); .mb(10);
                   &:last-child { .-b; }
-                  p { .mb(18); .semi-bold;
+                  p { .semi-bold; .mb(10);
                     img { .vat; .mt(5); }
                   }
-                  .p1 { .mb(8)!important; }
                   .p2 { .m(40,0,16)!important; }
                   span { .fs(13); .lh(16); color:#191919; .mb(6); .ib; }
                   input { .fs(14); .wh(100%,40); .lh(40); .bgc(#fff); .-a(#191919); .pl(16); .-box; .mb(16); .br(4); }
                   input:placeholder-shown { .-a(#d9d9d9); }
                   label { .block; .mb(20);
                     input[type=radio] + i { .wh(18,18); .-a(#aaa); .-box; .br(50%); .ib; .vam; .mr(10); .rel; }
-                    input[type=radio]:checked + i:after { .cnt; .wh(12,12); .bgc(#FFB50F); .abs; .lt(2,2); .br(50%); }
+                    input[type=radio]:checked + i { .-a(#FFB50F);
+                      &:after { .cnt; .wh(12,12); .bgc(#FFB50F); .abs; .lt(2,2); .br(50%); }
+                    }
                     input[type=checkbox] + i { .wh(18,18); .-a(#aaa); .br(2); .-box; .ib; .vat; .mr(8); .rel; }
                     input[type=checkbox]:checked + i { .bgc(#FFB50F); .-a; }
                     input[type=checkbox]:checked + i:after { .cnt; .wh(15,12); .contain('/images/front/mo/ico-chkd-y.svg'); .abs; .lt(2,4); }
@@ -243,16 +244,20 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
                     input[type=checkbox]:checked + i:after { .hide; }
                     s { .fs(12); color:#767676; }
                   }
-                  .etc { .ib; .vam; .mr(2); width: auto; .mt(0)!important; }
+                  .etc { .ib; .vam; .mr(2); width: auto; .mb(20); }
                   .etc ~ .amount { .mt(5); }
-                  .etc + input[type=text] { .wh(200,20); .lh(20); .-a; .-b(#3E3E3E); .mb(0); .br(0); .ib; .vam; background: transparent; }
-                  .input-wrap { .mb(20); .h(30);
+                  .etc + input[type=text] { .wh(230,20); .lh(20); .-a; .-b(#3E3E3E); .mb(20); .br(0); .ib; .pl(0); .ml(5); .vam; background: transparent;  }
+                  ::placeholder { .fs(12); }
+                  .input-wrap { .mb(5); .h(30);
                     label { .ib; .vam; .mb(0); .mt(7); }
                     input[type=number] { .wh(133,30); .lh(30); .-box; .fr; }
                     span { .fs(14); .lh(17); color:#999; .ib; .vam; .m(7,0,0,15); }
-                    &.et-wr { height: auto; .mb(45); }
+                    &.et-wr { height: auto; .mb(45);
+                      input[type=text] { .mb(0); }
+                    }
+                    .etc { .mb(20); }
                     .amount { .wh(133,30); .lh(30); .hide; }
-                    &.on .amount { .ib; }
+                    &.on .amount { .ib; .mb(0); }
                   }
                   .cont-cell { .mb(20);
                     label { .mb(8); }
@@ -266,13 +271,16 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
                     input { .mb(10); .-a(#D9D9D9); }
                     &:after { .cnt; .wh(16,18); .abs; .rt(10,10); .contain('/images/front/mo/ico-calendar.svg'); }
                   }
-                  &.cont-a { .-b; .mb(0); .pb(0); }
+                  &.cont-a { .-b; .mb(0); .pb(0);
+                    i, s { .vat; }
+                  }
                   .file-box { .rel;
                     .upload-name { .mb(10); }
                     .del-btn { .wh(12,12); .contain('/images/front/mo/ico-close-g.svg'); .abs; .rt(14,14); .hide; }
                     label { .fs(14); .lh(17); color:#999; .wh(100%,35); .lh(35); .-a(#D9D9D9); .bgc(#F5F5F5); .pl(20); .-box; }
                     input[type=file] { opacity: 0; .wh(0,0); .hide; }
                   }
+                  .depth { .pl(28); .-box; .hide; }
                 }
                 .cont5 {
                   p { .mb(20); }
@@ -280,8 +288,9 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
                     s { .ml(9); }
                   }
                 }
-                .cont6 p, .cont7 p { .mb(25); }
+                .cont6 p { .mb(25); }
                 .cont7 {
+                  p { .mb(0); }
                   .fileBox {
                     .file-nm { .rel;
                       input { .mb(10); }
@@ -307,9 +316,8 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
               &.list3 {
                 .cont-wrap {
                   .cont { .rel;
-                    p { .mb(20); }
                     .add { .fs(12); color:#555; .wh(79,26); .lh(26); .bgc(#F5F5F5); .-a(#D9D9D9); .tc; .abs; .rt(0,10); }
-                    .cont-inner { border-top: 1px dashed #DADADA; .pt(24); .-box; .mt(10); .rel;
+                    .cont-inner { border-top: 1px dashed #DADADA; .mt(20); .rel;
                       .sub { .fs(13); .medium; }
                       .del { .wh(12,12); .contain('/images/front/mo/ico-close-g.svg'); .abs; .rt(5,11); }
                     }
@@ -347,7 +355,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
               }
               &.list11 {
                 .cont1 { .-b; .pb(0);
-                  p { .mb(20); }
+                  p { .mb(15); }
                   label + p { .m(30,0,10); }
                   .select { .wh(100%,40); .-a(#DEDEDE); .-box; .pl(10); .bgc(#fff); .rel; .br(4);
                     &:after { .cnt; .wh(14,8); .abs; .rt(10,15); .contain('/images/front/mo/ico-drop-down-g.svg'); }
@@ -355,7 +363,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
                   }
                 }
                 .noti { .w(100%); .bgc(#F5F5F5); .p(12,16); .-box; .br(8); .mt(22);
-                  p { .fs(14); .lh(20); color:#191919; .medium; }
+                  p { .fs(14); .lh(20); color:#191919; .medium; .mb(0); }
                 }
               }
 
@@ -470,15 +478,15 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
             ul {
               li { .pb(45);
                 &:after { .wh(28,28); .contain('/images/front/mo/ico-arrow-down-y.svg'); .ml(-14); }
-                &:nth-child(2) .tit, &:nth-child(5) .tit { .mt(7); }
+                &:nth-child(3) .tit { .mt(7); }
                 .img { .wh(150,150); .-a(#fff,2px); .-box; .tc; .rel;
                   span { .fs(13); .lh(24); .mt(13); color:#FFB50F; .ib; .bold; }
                   .tit { .fs(18); .lh(24); color:#fff; .bold; .w(150); .abs; .lt(50%,50%); .ml(-75); transform: translateY(-50%); }
                 }
-                .txt { .lh(18); color:#fff; .regular; }
+                .txt { .lh(22); color:#fff; .regular; }
               }
             }
-            .intro { .fs(16); .lh(19); .tc; color:#fff; .bold; .wh(210,50); .lh(50); .br(25); .-a(#fff,2px); .-box; .ib; }
+            .intro { .fs(16); .lh(19); .tc; color:#fff; .bold; .wh(210,50); .lh(50); .br(25); border:2px solid rgba(255,255,255,0.4); .-box; .ib; }
           }
           &.arti6 {
             .swiper { .p(20,20,10); .-box; .mt(18);
@@ -677,7 +685,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
                 .logos4 { .wh(47,15); }
               }
             }
-            .apply { color:#fff; .bgc(#FFB50F); }
+            .apply { color:#fff; .bgc(#FFB50F); .mt(20); }
           }
         }
       }
@@ -840,6 +848,10 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
       }
     }
     &.page8 {
+      header.login ~ section .arti1 {
+        ul { .hide; }
+        .inquiry { .block; }
+      }
       section {
         article {
           &.top { .h(160); .bgc(#FFB50F); .tc; color:#fff;
@@ -852,6 +864,10 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
                 p { .fs(14); .lh(17); .mb(8); .semi-bold; }
                 input { .fs(14); .wh(100%,40); .lh(40); .pl(16); .-a(#d9d9d9); .-box; .br(4);  }
               }
+            }
+            .inquiry { .tl; .hide;
+              p { .fs(14); }
+              textarea { .fs(14); font-family: Pretendard, sans-serif; color:#AAA; .wh(320,218); .p(12,16); .-box; .-a(#D9D9D9); .br(4); .mb(40); }
             }
             .agree { .tl;
               .tit { .fs(18); .lh(22); .bold; .mb(16); }

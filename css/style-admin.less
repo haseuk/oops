@@ -154,6 +154,7 @@ img { backface-visibility: hidden; image-rendering: auto; .ib; }
                   td { .p(24,0); .-box;
                     &:nth-child(2) { .tl; .pl(50); .-box;
                       p { .w(100); overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.2em; }
+                      .view { .pointer; }
                     }
                   }
                 }
@@ -189,6 +190,7 @@ img { backface-visibility: hidden; image-rendering: auto; .ib; }
                       &.vt { .vat; }
                       span { .fs(20); .lh(24); .mb(12); color:#C0C0C0; .block; }
                       .img { .wh(91,91); .rel; .-a(#DEDEDE); overflow: hidden;
+                        .img-down { .wh(14,14); .contain('../images/admin/img-down.svg'); .abs; .rb(7,7); .ib; z-index: 2; .mb(0); .pointer; }
                         &:after { .cnt; .wh(15,15); .contain('../images/admin/ico-gallery.svg'); .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
                         img { .wf; .abs; .lt(50%,50%); transform: translate(-50%,-50%); .bgc(#fff); z-index: 1; }
                       }
@@ -368,7 +370,8 @@ img { backface-visibility: hidden; image-rendering: auto; .ib; }
             .detail-info {
               .top-cell { .clear; .-b;
                 p { .fs(16); .lh(33); .ib; }
-                .view-switch { .wh(24,24); .fr; .contain('../images/admin/ico-drop-down.svg'); .mt(9); }
+                .view-switch, .view-switch1 { .wh(24,24); .fr; .contain('../images/admin/ico-drop-down.svg'); .mt(9); }
+
               }
               .table-wrap { .hide; .-t(#dadada); }
               .table-result {
@@ -602,6 +605,44 @@ img { backface-visibility: hidden; image-rendering: auto; .ib; }
               }
             }
             .save { .mr(0); }
+          }
+        }
+      }
+      &.admin4 {
+        &.f-edit {
+          .detail-view {
+            .detail-info {
+              .top-cell { .p(15,0,0,0);
+                p { .ml(32); .mb(15); }
+                .view-switch1 { .mr(32); .mb(20); }
+                .edit-wrap { .hide; }
+              }
+              &.cell-on {
+                .top-cell {
+                  .view-switch1 { .contain('../images/admin/ico-drop-up.svg'); }
+                  .edit-wrap { .-t(#DADADA); .h(60); .tr; .block;
+                    .edit-btn { .fs(15); .tc; .wh(95,32); color:#191919; .lh(32); .br(16); .m(14,36,0,0); .-a(#DADADA); }
+                  }
+                }
+                &.table-on {
+                  .top-cell .edit-wrap { .hide; }
+                  .table-wrap { .block;
+                    textarea { .h(416); }
+                    .save { .mt(16);
+                      &:after { content:'저장하기' }
+                    }
+                  }
+                }
+                &.save-on {
+                  .table-wrap {
+                    textarea { .bgc(#FBFBFB); .-a(#FBFBFB); }
+                    .save { .mt(16); .bgc(#FBFBFB);
+                      &:after { content:'수정하기' }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
