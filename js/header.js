@@ -28,10 +28,14 @@ window.onload = function() {
 
     let userThumb = document.querySelector('.logout');
     let myPageClose = document.querySelector('.logout-btn');
+    let myPageX = document.querySelector('.my-close');
     userThumb.addEventListener('click', function() {
       header.classList.add('open-my');
     });
     myPageClose.addEventListener('click', function() {
+      header.classList.remove('open-my');
+    });
+    myPageX.addEventListener('click', function() {
       header.classList.remove('open-my');
     });
     let logged = document.querySelector('.logged');

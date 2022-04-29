@@ -119,6 +119,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
               p { .fs(14); .lh(17); .mb(6); }
               .edit { .fs(10); .lh(12); color:#555; }
             }
+            .my-close { .wh(12,12); .abs; .rt(20,28); .contain('../images/front/mo/ico-x-b.svg'); }
           }
           .my-page { .-b(#F4F4F4,8px); float: none;
             ul {
@@ -379,7 +380,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
     }
     &.main {
       section {
-        article { .p(56,0,32); .-box;
+        article { .p(56,0); .-box;
           h2 { .tc; }
           &.top { .bgc(#FFFBF3); .tc;
             ul { .mt(33);
@@ -490,7 +491,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
           }
           &.arti6 {
             .swiper { .p(20,20,10); .-box; .mt(18);
-              .swiper-slide { .bgc(#FBFBFB); box-shadow: 0 0 8px rgba(2,2,13,0.16); .tl; .br(12);
+              .swiper-slide { .h(385); .bgc(#FBFBFB); box-shadow: 0 0 8px rgba(2,2,13,0.16); .tl; .br(12);
                 .img { .wh(100%,172);
                   img { .wf; }
                 }
@@ -500,7 +501,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
                   .txt { color:#555; }
                 }
               }
-              .swiper-pagination { .b(0);
+              .swiper-pagination { .b(0); .rel; .mt(16);
                 .swiper-pagination-bullet { .wh(8,8); .bgc(#D9D9D9); .m(0,4,2); .br(50%); opacity: 1;
                   &.swiper-pagination-bullet-active { .wh(12,12); .bgc(#FFB50F); .mb(0); }
                 }

@@ -520,6 +520,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 3.33333333vw;
   color: #555;
 }
+.container .wrap header .user-page .user-inner .top .my-close {
+  width: 3.33333333vw;
+  height: 3.33333333vw;
+  position: absolute;
+  right: 5.55555556vw;
+  top: 7.77777778vw;
+  left: auto;
+  bottom: auto;
+  background-repeat: no-repeat;
+  background-image: url('../images/front/mo/ico-x-b.svg');
+  background-size: contain;
+}
 .container .wrap header .user-page .user-inner .my-page {
   border-bottom: 8px solid #F4F4F4;
   float: none;
@@ -1653,7 +1665,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .container .wrap.main section article {
   padding-top: 15.55555556vw;
   padding-right: 0vw;
-  padding-bottom: 8.88888889vw;
+  padding-bottom: 15.55555556vw;
   padding-left: 0vw;
   box-sizing: border-box;
 }
@@ -2215,6 +2227,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-top: 5vw;
 }
 .container .wrap.main section article.arti6 .swiper .swiper-slide {
+  height: 106.94444444vw;
   background-color: #FBFBFB;
   box-shadow: 0 0 8px rgba(2, 2, 13, 0.16);
   text-align: left;
@@ -2251,6 +2264,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .container .wrap.main section article.arti6 .swiper .swiper-pagination {
   bottom: 0vw;
+  position: relative;
+  margin-top: 4.44444444vw;
 }
 .container .wrap.main section article.arti6 .swiper .swiper-pagination .swiper-pagination-bullet {
   width: 2.22222222vw;

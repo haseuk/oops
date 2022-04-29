@@ -184,8 +184,15 @@
   <script src="/js/polyfill.js"></script>
   <script src="/js/header.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <!--####4.29일추가-->
   <script>
     new Swiper('.mySwiper', {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction:false,
+      },
       pagination: {
         el: ".swiper-pagination",
       },

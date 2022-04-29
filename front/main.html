@@ -286,7 +286,6 @@
   <script>
 
 
-    // 3.28 수정 -->
     let wi = window.innerWidth;
     new Swiper('.mySwiper.swiper1', {
       slidesPerView: 1.6,
@@ -309,11 +308,6 @@
         },
       },
     });
-    // 3.28 수정 끝 -->
-
-
-
-
 
     let spaceBetweenVal;
     function wiChk() {
@@ -323,10 +317,15 @@
     }
     wiChk();
 
+
+    <!--####4.29일 추가-->
     if(wi < 1079) {
       const swiper2 = new Swiper('.mySwiper.swiper2', {
         slidesPerView: 1,
         spaceBetween: spaceBetweenVal,
+        autoplay: {
+          disableOnInteraction:false,
+        },
         pagination: {
           el: ".swiper-pagination",
         },
