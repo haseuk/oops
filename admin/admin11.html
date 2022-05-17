@@ -32,15 +32,19 @@
             <a class="filter-btn"><img src="../images/admin/ico-filter.svg" alt=""> 필터추가</a><!-- 3.28 추가 -->
             <a class="addition-btn">추가하기</a>
           </div>
+
+
           <div class="table">
             <table cellspacing="0" cellpadding="0" border="0">
               <colgroup>
                 <col width="45">
                 <col width="300">
-                <col width="263">
-                <col width="263">
-                <col width="263">
-                <col width="263">
+                <col width="200"><!-- #####05.17 수정-->
+                <col width="200"><!-- #####05.17 수정-->
+                <col width="200"><!-- #####05.17 수정-->
+                <col width="200"><!-- #####05.17 수정-->
+                <col width="100"><!-- #####05.17 수정-->
+                <col width="152"><!-- #####05.17 수정-->
               </colgroup>
               <tr>
                 <th>
@@ -54,6 +58,8 @@
                 <th>팝업 종료일</th>
                 <th>생성일</th>
                 <th>미리보기</th>
+                <th>삭제</th><!-- #####05.17 수정-->
+                <th>수정하기</th><!-- #####05.17 수정-->
               </tr>
               <tr>
                 <td>
@@ -69,6 +75,19 @@
                 <td>
                   <a class="pre-view-btn t-btn">미리보기</a>
                 </td>
+
+
+                <!-- #####05.17 수정-->
+                <td>
+                  <a class="del t-btn">삭제</a>
+                </td>
+                <td>
+                  <a class="view t-btn">수정하기</a>
+                </td>
+                <!-- #####05.17 수정-->
+
+
+
               </tr>
               <tr>
                 <td>
@@ -84,6 +103,21 @@
                 <td>
                   <a class="pre-view-btn t-btn">미리보기</a>
                 </td>
+
+
+
+                <!-- #####05.17 수정-->
+                <td>
+                  <a class="del t-btn">삭제</a>
+                </td>
+                <td>
+                  <a class="view t-btn">수정하기</a>
+                </td>
+                <!-- #####05.17 수정-->
+
+
+
+
               </tr>
               <tr>
                 <td>
@@ -99,6 +133,21 @@
                 <td>
                   <a class="pre-view-btn t-btn">미리보기</a>
                 </td>
+
+
+
+                <!-- #####05.17 수정-->
+                <td>
+                  <a class="del t-btn">삭제</a>
+                </td>
+                <td>
+                  <a class="view t-btn">수정하기</a>
+                </td>
+                <!-- #####05.17 수정-->
+
+
+
+
               </tr>
             </table>
           </div>
@@ -168,16 +217,24 @@
       </section>
     </div>
   </div>
+
+
+  <!-- #####05.17 수정-->
   <div class="popup">
     <div class="dim"></div>
     <div class="inner">
       <p class="tit">삭제하시겠습니까?</p>
+      <p class="txt">삭제된 팝업은  복구가 불가합니다.</p>
       <div class="btns">
         <a class="del t-btn">삭제하기</a>
         <a class="cancel t-btn">취소하기</a>
       </div>
     </div>
   </div>
+  <!-- #####05.17 수정-->
+
+
+
   <script src="/js/polyfill.js"></script>
   <script src="/js/aside.js"></script>
   <script src="/js/admin.js"></script>
